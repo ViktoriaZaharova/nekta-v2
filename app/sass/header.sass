@@ -1,0 +1,119 @@
+@import "fonts"
+@import "vars"
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 160px
+  width: 100%
+  img
+    width: 100%
+
+header
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 4
+  width: 100%
+  background: #fff
+  .logo
+    position: absolute
+    left: 70px
+    top: 30px
+  .container-fluid
+    padding: 0 70px
+  .btn-call
+    position: absolute
+    right: 70px
+    top: 22px
+
+
+.phone
+  color: #212121
+  margin: 0 -50px 0 0
+  font-weight: 600
+  font-size: 16px
+  &:hover
+    color: $accent
+
+.links-cabinet
+  margin: 0 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 16px
+  height: 16px
+  fill: #212121
+  &:hover
+    fill: $accent
+
+.list-language
+  display: flex
+  align-items: center
+  font-size: 12px
+  text-transform: uppercase
+  li
+    margin: 0 10px 0 0
+    padding: 0 10px 0 0
+    border-right: 1px solid #E5E8E9
+    &:last-child
+      margin: 0
+      padding: 0
+      border: none
+    a
+      color: #212121
+      &:hover
+        color: $accent
+    .active
+      color: $accent
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+  font-weight: 500
+  margin: 0 auto 0 0
+  li
+    margin: 0 40px 0 0
+    &:last-child
+      margin: 0
+    >a
+      position: relative
+      padding: 36px 0
+      color: #212121
+      &:hover
+        color: $accent
+
+.js-tab-trigger.active
+  &:after
+    position: absolute
+    bottom: 0
+    left: 0
+    content: ''
+    border: none
+    width: 100%
+    height: 4px
+    background: $accent
+    margin: 0
+
+.btn-burger
+  width: 30px
+  cursor: pointer
+  display: none
+  span
+    width: 100%
+    background: $accent
+    height: 3px
+    display: block
+    margin: 0 0 5px
+    border-radius: 4px
+    &:last-child
+      margin: 0
+
+.js-tab-content
+  display: none
+
+.js-tab-content.active
+  display: block
