@@ -231,3 +231,31 @@ header
     transform: rotate(45deg)
   &:after
     transform: rotate(135deg)
+
+.mobile-menu-toggle
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &:after
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 10px
+    height: 20px
+    background: url("../img/arrow-right.svg") no-repeat center
+      size: 100%
+    transform: rotate(90deg)
+
+.mobile-menu-sub
+  width: 100%
+  padding: 10px
+  display: none
+  .service-product
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  .dropdown-menu-list
+    font-size: 14px
+    li
+      margin: 0 0 10px

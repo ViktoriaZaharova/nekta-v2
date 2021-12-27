@@ -272,3 +272,44 @@ header {
   .btn-close-menu:after {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
+
+.mobile-menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .mobile-menu-toggle:after {
+    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 10px;
+    height: 20px;
+    background: url("../img/arrow-right.svg") no-repeat center;
+      background-size: 100%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+.mobile-menu-sub {
+  width: 100%;
+  padding: 10px;
+  display: none; }
+  .mobile-menu-sub .service-product {
+    margin: 0 0 20px; }
+    .mobile-menu-sub .service-product:last-child {
+      margin: 0; }
+  .mobile-menu-sub .dropdown-menu-list {
+    font-size: 14px; }
+    .mobile-menu-sub .dropdown-menu-list li {
+      margin: 0 0 10px; }

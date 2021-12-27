@@ -35,11 +35,63 @@
     <div class="btn-close-menu"></div>
     <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
     <ul class="menu">
-      <li><a href="#">Продукты</a></li>
+      <li><a href="#" class="mobile-menu-toggle">Продукты</a>
+        <div class="mobile-menu-sub">
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+          </a>
+        </div>
+      </li>
       <li><a href="#">Услуги</a></li>
       <li><a href="#">Оборудование</a></li>
-      <li><a href="#">Сообщество</a></li>
-      <li><a href="#">Компания</a></li>
+      <li><a href="#" class="mobile-menu-toggle">Сообщество</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">Карта партнеров</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Разработчики ПО</a></li>
+            <li><a href="#">Библиотека кейсов</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Вебинары</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Выставки</a></li>
+            <li><a href="#">Справочный центр</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" class="mobile-menu-toggle">Компания</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </li>
       <li><a href="#">Новости</a></li>
       <li><a href="#">Новости</a></li>
     </ul>
@@ -897,7 +949,8 @@
 
       <div class="row">
         <div class="col-12 order-lg-1 col-lg-4">
-          <div class="nav nav-tabs nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+          <div class="nav nav-tabs nav-tabs-function nav-pills" id="v-pills-tab2" role="tablist"
+               aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
                aria-controls="v-pills-1" aria-selected="true">Устройства</a>
             <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
@@ -916,7 +969,7 @@
         </div>
 
         <div class="col-12 col-lg-8">
-          <div class="tab-content" id="v-pills-tabContent2">
+          <div class="tab-content tab-content-function" id="v-pills-tabContent2">
             <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
                  aria-labelledby="v-pills-1-tab">
               <div class="box-text"><p>Передача показаний датчиков в режиме реального времени и сохранение данных в
@@ -1172,7 +1225,8 @@
 
       <div class="row">
         <div class="col-12 order-lg-1 col-lg-4">
-          <div class="nav nav-tabs nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="nav nav-tabs nav-tabs-function2 nav-pills" id="v-pills-tab" role="tablist"
+               aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                aria-controls="v-pills-home" aria-selected="true">Избранное</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
@@ -1193,7 +1247,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-content tab-content-function2" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                  aria-labelledby="v-pills-home-tab">
               <div class="box-text"><p>Раздел «Устройства» является одним из главных разделов системы. В данном
@@ -1643,7 +1697,7 @@
         <div class="col-12">
           <div class="footer-center">
             <div class="row">
-              <div class="col-12 col-lg-5">
+              <div class="col-12 col-lg-4">
                 <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
                 <div class="info-company">
@@ -1696,7 +1750,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-7 d-flex flex-wrap">
+              <div class="col-12 col-lg-8 d-flex flex-wrap">
                 <div class="footer-col">
                   <div class="footer-box">
                     <h3>Продукты</h3>
