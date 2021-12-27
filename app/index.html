@@ -31,6 +31,33 @@
 
 <div class="wrapper">
 
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="#">Продукты</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Оборудование</a></li>
+      <li><a href="#">Сообщество</a></li>
+      <li><a href="#">Компания</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+    <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+    <ul class="list-language">
+      <li><a href="#" class="active">RU</a></li>
+      <li><a href="#">Eng</a></li>
+      <li>
+        <a href="#" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
   <header>
     <div class="header-top">
       <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
@@ -62,8 +89,6 @@
 
             <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
 
-
-
             <div class="btn-burger">
               <span></span>
               <span></span>
@@ -78,7 +103,7 @@
     <div class="header-bottom js-tab-content" data-tab="1">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <a href="#" class="service-product">
               <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
               <span class="service-product__body">
@@ -87,7 +112,7 @@
               </span>
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <a href="#" class="service-product">
               <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
               <span class="service-product__body">
@@ -96,7 +121,7 @@
               </span>
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <a href="#" class="service-product">
               <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
               <span class="service-product__body">
@@ -112,7 +137,7 @@
     <div class="header-bottom js-tab-content" data-tab="2">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <ul class="dropdown-menu-list">
               <li><a href="#">Карта партнеров</a></li>
               <li><a href="#">Партнеры</a></li>
@@ -120,10 +145,9 @@
               <li><a href="#">Библиотека кейсов</a></li>
               <li><a href="#">Техподдержка</a></li>
               <li><a href="#">Обучение</a></li>
-              <li><a href="#"></a></li>
             </ul>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <ul class="dropdown-menu-list">
               <li><a href="#">Вебинары</a></li>
               <li><a href="#">Маркетинг</a></li>
@@ -162,7 +186,7 @@
 
   <main class="home">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-12 col-lg-7">
           <div class="home-content">
             <p>100% автоматизация сбора, учёта и аналитики потребления энергоресурсов</p>
@@ -872,6 +896,25 @@
       </div>
 
       <div class="row">
+        <div class="col-12 order-lg-1 col-lg-4">
+          <div class="nav nav-tabs nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+               aria-controls="v-pills-1" aria-selected="true">Устройства</a>
+            <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+               aria-controls="v-pills-2" aria-selected="false">Работа с данными</a>
+            <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+               aria-controls="v-pills-3" aria-selected="false">Гибкая система отчетов</a>
+            <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+               aria-controls="v-pills-4" aria-selected="false">Компании и пользователи</a>
+            <a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab"
+               aria-controls="v-pills-5" aria-selected="false">Сведение баланса </a>
+            <a class="nav-link" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab"
+               aria-controls="v-pills-6" aria-selected="false">Система уведомлений</a>
+            <a class="nav-link" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7" role="tab"
+               aria-controls="v-pills-7" aria-selected="false">Мобильный клиент</a>
+          </div>
+        </div>
+
         <div class="col-12 col-lg-8">
           <div class="tab-content" id="v-pills-tabContent2">
             <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
@@ -924,24 +967,6 @@
                 авто-отчета по форме заказчика. Период хранения показаний не менее 12 месяцев.</p></div>
               <div class="functional-cabinet__img"><img src="img/iMac.png" alt=""></div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 order-md-1 col-lg-4">
-          <div class="nav nav-tabs nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
-               aria-controls="v-pills-1" aria-selected="true">Устройства</a>
-            <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
-               aria-controls="v-pills-2" aria-selected="false">Работа с данными</a>
-            <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
-               aria-controls="v-pills-3" aria-selected="false">Гибкая система отчетов</a>
-            <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
-               aria-controls="v-pills-4" aria-selected="false">Компании и пользователи</a>
-            <a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab"
-               aria-controls="v-pills-5" aria-selected="false">Сведение баланса </a>
-            <a class="nav-link" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab"
-               aria-controls="v-pills-6" aria-selected="false">Система уведомлений</a>
-            <a class="nav-link" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7" role="tab"
-               aria-controls="v-pills-7" aria-selected="false">Мобильный клиент</a>
           </div>
         </div>
 
@@ -1146,6 +1171,27 @@
       </div>
 
       <div class="row">
+        <div class="col-12 order-lg-1 col-lg-4">
+          <div class="nav nav-tabs nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+               aria-controls="v-pills-home" aria-selected="true">Избранное</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+               aria-controls="v-pills-profile" aria-selected="false">Инфраструктура</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+               aria-controls="v-pills-messages" aria-selected="false">Устройства</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+               aria-controls="v-pills-settings" aria-selected="false">События</a>
+            <a class="nav-link" id="v-pills-reports-tab" data-toggle="pill" href="#v-pills-reports" role="tab"
+               aria-controls="v-pills-settings" aria-selected="false">Отчеты</a>
+            <a class="nav-link" id="v-pills-company-tab" data-toggle="pill" href="#v-pills-company" role="tab"
+               aria-controls="v-pills-company" aria-selected="false">Компании</a>
+            <a class="nav-link" id="v-pills-users-tab" data-toggle="pill" href="#v-pills-users" role="tab"
+               aria-controls="v-pills-users" aria-selected="false">Пользователи</a>
+            <a class="nav-link" id="v-pills-access-tab" data-toggle="pill" href="#v-pills-access" role="tab"
+               aria-controls="v-pills-access" aria-selected="false">Права
+              доступа</a>
+          </div>
+        </div>
         <div class="col-12 col-lg-8">
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
@@ -1215,28 +1261,6 @@
             </div>
           </div>
         </div>
-        <div class="col-12 order-md-1 col-lg-4">
-          <div class="nav nav-tabs nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-               aria-controls="v-pills-home" aria-selected="true">Избранное</a>
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-               aria-controls="v-pills-profile" aria-selected="false">Инфраструктура</a>
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-               aria-controls="v-pills-messages" aria-selected="false">Устройства</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-               aria-controls="v-pills-settings" aria-selected="false">События</a>
-            <a class="nav-link" id="v-pills-reports-tab" data-toggle="pill" href="#v-pills-reports" role="tab"
-               aria-controls="v-pills-settings" aria-selected="false">Отчеты</a>
-            <a class="nav-link" id="v-pills-company-tab" data-toggle="pill" href="#v-pills-company" role="tab"
-               aria-controls="v-pills-company" aria-selected="false">Компании</a>
-            <a class="nav-link" id="v-pills-users-tab" data-toggle="pill" href="#v-pills-users" role="tab"
-               aria-controls="v-pills-users" aria-selected="false">Пользователи</a>
-            <a class="nav-link" id="v-pills-access-tab" data-toggle="pill" href="#v-pills-access" role="tab"
-               aria-controls="v-pills-access" aria-selected="false">Права
-              доступа</a>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
