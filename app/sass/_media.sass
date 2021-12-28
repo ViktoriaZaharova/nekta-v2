@@ -4,25 +4,24 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1810px)
+  header
+    .menu
+      margin: 0 auto 0 30px
+
   .phone
-    margin: 0
+    margin: 0 30px 0 0
+
 
 @media only screen and (max-width: 1700px)
   .header-top
     display: flex
     align-items: center
-    padding: 0 15px
 
   header
-    .logo, .btn-call
-      position: relative
-      top: 0
-      right: 0
-      left: 0
-
     .links-cabinet
       margin: 0 20px
-
+    .container-fluid
+      padding: 0 15px
 
 
 @media only screen and (max-width: 1440px)
@@ -39,14 +38,22 @@
   .home-img
     min-width: 700px
 
+  header
+    .logo
+      max-width: 120px
+    .phone
+      margin: 0 20px 0 0
+
+  .btn-call
+    max-width: 160px
+
 @media only screen and (max-width: 1200px)
   header
     padding: 20px 0
-    .container
-      margin: 0 10px 0 auto
-      width: fit-content
     .menu
       display: none
+    .logo
+      margin: 0 auto 0 0
 
   .btn-burger
     display: block
@@ -232,8 +239,7 @@
   header
     .btn-call
       display: none
-    .container
-      margin: 0 0 0 auto
+
 
   .wrapper
     padding: 60px 0 0
