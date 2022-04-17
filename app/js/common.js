@@ -188,3 +188,30 @@ $('.mobile-menu-toggle').on('click', function (e) {
     e.preventDefault();
     $(this).siblings('.mobile-menu-sub').slideToggle();
 });
+
+$(".js-select2-1").select2({
+    closeOnSelect : false,
+    placeholder : "Отрасли",
+    // allowHtml: true,
+    allowClear: true,
+    tags: true, // создает новые опции на лету,
+    width: '100%'
+});
+
+$(".js-select2-2").select2({
+    closeOnSelect : false,
+    placeholder : "Направления",
+    // allowHtml: true,
+    allowClear: true,
+    tags: true, // создает новые опции на лету,
+    width: '100%'
+});
+
+$(".js-select2-3").select2({
+    closeOnSelect : false,
+    placeholder : "Технологии",
+    // allowHtml: true,
+    allowClear: true,
+    tags: true, // создает новые опции на лету,
+    width: '100%'
+});

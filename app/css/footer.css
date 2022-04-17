@@ -4,7 +4,7 @@ footer {
   color: #fff; }
   footer .logo {
     -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
     max-width: 160px; }
 
 .footer-top {
@@ -25,8 +25,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #fff;
   padding: 8px 8px 8px 0; }
   .form-subscribe label {
@@ -40,11 +40,12 @@ footer {
   max-width: 265px;
   margin: 20px 0 118px;
   font-size: 14px; }
-  .info-company__links {
-    margin: 20px 0 0;
-    color: #fff; }
-    .info-company__links:hover {
-      color: #CF5555; }
+
+.info-company__links {
+  margin: 20px 0 0;
+  color: #fff; }
+  .info-company__links:hover {
+    color: #CF5555; }
 
 .address {
   margin: 20px 0; }
@@ -63,26 +64,26 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .list-social li {
     margin: 0 5px 0 0; }
     .list-social li:last-child {
       margin: 0; }
     .list-social li a {
       border: 1px solid #fff;
-        border-radius: 50%;
+      border-radius: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       fill: #fff;
       width: 40px;
       height: 40px;
@@ -97,8 +98,8 @@ footer {
   .footer-col:last-child {
     margin: 0 0 0 auto;
     max-width: none;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
+    width: -webkit-fit-content;
     width: fit-content; }
 
 .footer-menu {
