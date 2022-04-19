@@ -233,11 +233,27 @@ $(".select-my1").select2({
     dropdownCssClass: "dropdown-select-my"
 });
 
-$(".select-my-country").select2({
+$(".select-my-country1").select2({
     placeholder: "Страна",
     allowClear: true,
     width: '100%',
     dropdownCssClass: "dropdown-select-country"
 });
 
+$(".select-my-country2").select2({
+    placeholder: "Нижегородская область",
+    allowClear: true,
+    width: '100%',
+    dropdownCssClass: "dropdown-select-country"
+});
 
+$(".select-my-country3").select2({
+    placeholder: "Нижний Новгород",
+    allowClear: true,
+    width: '100%',
+    dropdownCssClass: "dropdown-select-country"
+});
+
+$('.search-country-modal__close').on('click', function () {
+   $(this).parents('.search-country-modal').fadeOut();
+});

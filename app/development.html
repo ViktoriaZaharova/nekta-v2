@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nekta</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="#" class="mobile-menu-toggle">Продукты</a>
+        <div class="mobile-menu-sub">
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Оборудование</a></li>
+      <li><a href="#" class="mobile-menu-toggle">Сообщество</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">Карта партнеров</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Разработчики ПО</a></li>
+            <li><a href="#">Библиотека кейсов</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Вебинары</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Выставки</a></li>
+            <li><a href="#">Справочный центр</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" class="mobile-menu-toggle">Компания</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+    <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+    <ul class="list-language">
+      <li><a href="#" class="active">RU</a></li>
+      <li><a href="#">Eng</a></li>
+      <li>
+        <a href="#" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <header>
+    <div class="header-top">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <ul class="menu">
+              <li><a href="#" class="js-tab-trigger" data-tab="1">Продукты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="2">Сообщество</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="3">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+
+            <ul class="list-language">
+              <li><a href="#" class="active">RU</a></li>
+              <li><a href="#">Eng</a></li>
+            </ul>
+
+            <a href="#" class="links-cabinet">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+            </a>
+
+            <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+            <a href="#" class="btn btn-accent btn-call">Оставить заявку</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="header-bottom js-tab-content" data-tab="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Карта партнеров</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Разработчики ПО</a></li>
+              <li><a href="#">Библиотека кейсов</a></li>
+              <li><a href="#">Техподдержка</a></li>
+              <li><a href="#">Обучение</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вебинары</a></li>
+              <li><a href="#">Маркетинг</a></li>
+              <li><a href="#">Выставки</a></li>
+              <li><a href="#">Справочный центр</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Карьера</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-case-page home-develop">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Разработка
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="home-content">
+            <h1>Разработка программного обеспечения любой сложности</h1>
+
+            <div class="box-text">
+              <p>Создаем и внедряем передовые программные продукты для различных секторов промышленности и сфер
+                бизнеса.</p>
+            </div>
+
+            <a href="callback.html" class="btn btn-accent">Оставить заявку</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="home-case-page__img"><img src="img/develop.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="partners-line">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="partners-line-wrapper">
+            <div class="partners-line-box"><img src="img/partner1.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner2.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner3.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner4.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner5.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner6.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner7.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner8.png" alt=""></div>
+            <div class="partners-line-box"><img src="img/partner9.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="warranty-design bg-light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h2>Предсказуемая разработка — гарантия лучшего результата</h2>
+          <div class="warranty-design-item">
+            <div class="warranty-design-item__num">20+</div>
+            <div class="warranty-design-item__body">
+              <p>Профессиональных разработчиков в команде</p>
+            </div>
+          </div>
+          <div class="warranty-design-item">
+            <div class="warranty-design-item__num">5+</div>
+            <div class="warranty-design-item__body">
+              <p>Многолетний опыт разработки программного обеспечения
+                на заказ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="warranty-design__img"><img src="img/warranty-image.jpeg" alt=""></div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="box-text">
+            <p>Наша ключевая компетенция – разработка программных решений для интеллектуального учета различного рода
+              показателей и их аналитики, а также внедрение систем управления и автоматизации, организующих работу
+              различного оборудования или целых установок, персонала и корпоративных бизнес-процессов. А также мы
+              предлагаем широкий спектр индивидуальных услуг в области мобильных приложений, разработки веб-сайтов и
+              многих других направлений.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about principles p-150">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h2>Принципы NEKTA в разработке ПО</h2>
+          <div class="box-text">
+            <p>Мы строго следуем принципам предсказуемой и прозрачной разработки, чтобы результат нашей работы
+              превосходил Ваши ожидания.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="principles-wrapper">
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box no-border">
+              <div class="about-box__icon"><img src="img/principe1.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>КАЧЕСТВЕННЫЕ ПРОДУКТЫ</h4>
+                <div class="box-text">
+                  <p>Детальная проработка каждого проекта, накопленный опыт в разработке ПО и передовые технологии
+                    позволяют нам создавать высококачественные продукты.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40 ml-auto">
+            <div class="about-box no-border">
+              <div class="about-box__icon"><img src="img/principe2.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>ОПТИМИЗАЦИЯ</h4>
+                <div class="box-text">
+                  <p>На любом этапе проекта наша команда готова вносить и реализовывать предложения по совершенствованию
+                    и
+                    технической оптимизации продукта.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box">
+              <div class="about-box__icon"><img src="img/principe3.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>АДАПТИВНАЯ РАЗРАБОТКА</h4>
+                <div class="box-text">
+                  <p>Наши решения максимально заточены под поставленные задачи, адаптированы под оптимальные форматы и
+                    режимы работы.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box">
+              <div class="about-box__icon"><img src="img/principe4.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>ГИБКАЯ РАЗРАБОТКА</h4>
+                <div class="box-text">
+                  <p>Гибкий подход в разработке позволяет нам обеспечивать лучшие продукты и сервис по их сопровождению,
+                    повышая надежность и масштабируемость Вашего бизнеса.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box">
+              <div class="about-box__icon"><img src="img/principe5.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>ОРИЕНТАЦИЯ НА РЕЗУЛЬТАТ</h4>
+                <div class="box-text"><p>По каждому проекту формируем оптимальное решение для достижения наилучшего
+                  результата, роста и развития Вашего бизнеса.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box">
+              <div class="about-box__icon"><img src="img/principe6.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>ОПЕРАТИВНАЯ ТЕХПОДДЕРЖКА</h4>
+                <div class="box-text">
+                  <p>Предоставляем полное техническое сопровождение на всех этапах проекта и использования внедренных
+                    продуктов. Оперативно решаем любые возникающие вопросы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box">
+              <div class="about-box__icon"><img src="img/principe7.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>РЕЗЕРВНЫЕ КОПИИ ДАННЫХ</h4>
+                <div class="box-text">
+                  <p>Обязательное использование резервных копий проектов помогают нашей команде находить лучшие решения
+                    и
+                    обеспечивать безопасность разработок.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-40">
+            <div class="about-box">
+              <div class="about-box__icon"><img src="img/principe8.svg" alt=""></div>
+              <div class="about-box__body">
+                <h4>КОНФИДЕНЦИАЛЬНОСТЬ ДАННЫХ</h4>
+                <div class="box-text">
+                  <p>Гарантируем исключительную защиту Ваших данных, обеспечиваем безопасность информации на каждом
+                    этапе разработки.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="#" class="btn btn-accent btn-lg">Оставить заявку</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="technologies">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center"><h2>Услуги и технологии</h2></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="technologies-box">
+            <h4>Разработка приложений</h4>
+            <div class="technologies-box__body">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="technologies-box-list">
+                    <ul class="technologies-box-ul">
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech1.png" alt=""></div>
+                        <p>Android App</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech2.png" alt=""></div>
+                        <p>iOS App</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech3.png" alt=""></div>
+                        <p>Flutter</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="links-next">
+              <span class="links-next__text">подробнее</span>
+              <span class="links-next__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="technologies-box">
+            <h4>Веб-разработка</h4>
+            <div class="technologies-box__body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="technologies-box-list">
+                    <h5>Технологии</h5>
+                    <ul class="technologies-box-ul">
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech4.png" alt=""></div>
+                        <p>PHP</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech5.png" alt=""></div>
+                        <p>Laravel</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech6.svg" alt=""></div>
+                        <p>JavaScript</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech7.png" alt=""></div>
+                        <p>Python</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech8.png" alt=""></div>
+                        <p>NodeJS</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech9.png" alt=""></div>
+                        <p>Go</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="technologies-box-list">
+                    <h5>Базы данных</h5>
+                    <ul class="technologies-box-ul">
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech10.png" alt=""></div>
+                        <p>PosrgreSQL</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech11.png" alt=""></div>
+                        <p>MySql</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech12.png" alt=""></div>
+                        <p>MongoDB</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech13.png" alt=""></div>
+                        <p>Tarantool</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech14.svg" alt=""></div>
+                        <p>Clickhouse</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech15.png" alt=""></div>
+                        <p>Redis</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="links-next">
+              <span class="links-next__text">подробнее</span>
+              <span class="links-next__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="technologies-box">
+            <h4>IoT & Embedded</h4>
+            <div class="technologies-box__body">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="technologies-box-list">
+                    <h5></h5>
+                    <ul class="technologies-box-ul">
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech16.png" alt=""></div>
+                        <p>MQTT</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech17.png" alt=""></div>
+                        <p>RabbitMQ</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech18.png" alt=""></div>
+                        <p>Kafka</p>
+                      </li>
+                      <li>
+                        <div class="technologies-box__icon"><img src="img/tech19.png" alt=""></div>
+                        <p>Network Server</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="links-next">
+              <span class="links-next__text">подробнее</span>
+              <span class="links-next__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stages-development bg-light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Этапы разработки</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage1.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>1.</span> Сбор требований</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>Детальное изучение требований, ресурсов и исходной информации по проекту и формирование технического
+                задания на разработку ПО.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage2.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>2.</span> UI/UX-дизайн</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>Разработка современного функционального и удобного дизайна с применением новейших инструментов.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage3.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>3.</span> Прототип (MVP)</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>В результате проектирования формируется прототип и отправляется для разработки продукта</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage4.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>4.</span> Разработка</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>Процесс разработки системы интеллектуального учета, мобильного приложения или веб-сайта в режиме
+                максимальной прозрачности.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage5.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>5.</span> Тестирование</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>В ходе тестовых запусков обеспечиваем полную отказоустойчивость продукта.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage6.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>6.</span> Развертывание</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>Запуск готового продукта в работу (ИСУ, сайта, приложения).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20">
+          <div class="stages-development-box">
+            <div class="stages-development-box__head">
+              <div class="stages-development-box__icon"><img src="img/stage7.svg" alt=""></div>
+              <div class="stages-development-box__name"><h4><span>7.</span> Поддержка и обслуживание</h4></div>
+            </div>
+            <div class="stages-development-box__body">
+              <p>Обеспечиваем полную техническую поддержку и сопровождение по всем вопросам, возникающим после
+                развертывания.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-20 d-flex align-items-center justify-content-center">
+          <a href="#" class="btn btn-accent btn-lg">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="models p-150">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h2>Модели разработки</h2>
+          <div class="box-text mb-40">
+            <p>Доверьте Ваши задачи профессиональной команде NEKTA – российскому разработчику ПО и пользовательских
+              бизнес-приложений, в рамках удобной для Вас модели работы.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-40">
+          <div class="models-box">
+            <div class="models-box__head">
+              <div class="models-box__icon"><img src="img/model1.svg" alt=""></div>
+              <div class="models-box__name">
+                <h4>Каскадная модель разработки</h4>
+              </div>
+            </div>
+            <div class="models-box__body">
+              <p>В рамках этой модели объем работ по разработке, их стоимость и сроки определяются и фиксируются до
+                запуска проекта в работу. Такой вариант взаимодействия будет оптимален для длительных проектов и
+                гарантирует сохранение рамок заявленных на старте бюджетов. Также он применим в случаях, когда есть
+                возможность уже на старте сформировать максимально четкие требования по проекту.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-40">
+          <div class="models-box">
+            <div class="models-box__head">
+              <div class="models-box__icon"><img src="img/model2.svg" alt=""></div>
+              <div class="models-box__name">
+                <h4>Гибкая методология разработки</h4>
+              </div>
+            </div>
+            <div class="models-box__body">
+              <p>Представляет собой классический и более простой сценарий взаимодействия в рамках проекта разработки ПО
+                и предполагает почасовую оплату проделанной работы. Такая модель позволяет быстро запустить проект в
+                работу и не требует исчерпывающего описания всех требований к продукту уже на старте. Также преимущество
+                методологии заключается в возможности добавления или изменения заявленного функционала уже в процессе
+                работы по желанию Заказчика.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 co-lg-8">
+          <div class="box-text">
+            <p>Выбор модели зависит от особенностей и специфики проекта. Свяжитесь с нами, и мы подберем оптимальную
+              методологию именно под Ваши задачи и бесплатно сделаем оценку проекта в течение нескольких дней.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="similar-cases bg-light-blue">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-12 col-md-8 col-lg-9 mb-40">
+          <h2>Кейсы разработки</h2>
+          <div class="box-text">
+            <p>Рассказываем о реализованных проектах и особенностях предложенных решений.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3 mb-40">
+          <a href="cases.html" class="btn btn-accent btn-all-cases">Все кейсы</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 mb-30">
+          <a href="case-page.html" class="case-item">
+            <div class="case-item__img">
+              <div class="logo-item"><img src="img/logo.svg" alt=""></div>
+              <img src="img/case1.jpg" alt="">
+            </div>
+            <div class="case-item__body">
+              <h4>Разработка сайта Somni</h4>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>PosrgreSQL</li>
+                <li>Network Server</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-30">
+          <a href="case-page.html" class="case-item">
+            <div class="case-item__img">
+              <div class="logo-item"><img src="img/logo.svg" alt=""></div>
+              <img src="img/case2.jpg" alt="">
+            </div>
+            <div class="case-item__body">
+              <h4>Название проекта</h4>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>PosrgreSQL</li>
+                <li>Network Server</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-30">
+          <a href="#" class="case-item">
+            <div class="case-item__img">
+              <div class="logo-item"><img src="img/logo.svg" alt=""></div>
+              <img src="img/case3.jpg" alt="">
+            </div>
+            <div class="case-item__body">
+              <h4>Дизайн и разработка сайта
+                для компании “ФРП”</h4>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>PosrgreSQL</li>
+                <li>Network Server</li>
+                <li>RabbitMQ</li>
+                <li>MySql</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-30">
+          <a href="case-page.html" class="case-item">
+            <div class="case-item__img">
+              <div class="logo-item"><img src="img/logo.svg" alt=""></div>
+              <img src="img/case2.jpg" alt="">
+            </div>
+            <div class="case-item__body">
+              <h4>Название проекта</h4>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>PosrgreSQL</li>
+                <li>Network Server</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-30">
+          <a href="#" class="case-item">
+            <div class="case-item__img">
+              <div class="logo-item"><img src="img/logo.svg" alt=""></div>
+              <img src="img/case3.jpg" alt="">
+            </div>
+            <div class="case-item__body">
+              <h4>Дизайн и разработка сайта
+                для компании “ФРП”</h4>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>PosrgreSQL</li>
+                <li>Network Server</li>
+                <li>RabbitMQ</li>
+                <li>MySql</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-30">
+          <a href="case-page.html" class="case-item">
+            <div class="case-item__img">
+              <div class="logo-item"><img src="img/logo.svg" alt=""></div>
+              <img src="img/case1.jpg" alt="">
+            </div>
+            <div class="case-item__body">
+              <h4>Разработка сайта Somni</h4>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>PosrgreSQL</li>
+                <li>Network Server</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-blue colleagues">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>С кем мы работаем</h2>
+          <div class="box-text">
+            <p>Десятки компаний доверяют разработку программного обеспечения нашей команде. В числе наших партнеров
+              крупные предприятия, компании среднего и малого сектора бизнеса, крупные холдинги и стартапы, которые еще
+              только в начале своего пути.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-20">
+              <div class="colleagues-box">
+                <div class="colleagues-box__icon"><img src="img/colleagues-icon1.svg" alt=""></div>
+                <div class="colleagues-box__body">
+                  <p>Start Up бизнес</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-20">
+              <div class="colleagues-box">
+                <div class="colleagues-box__icon"><img src="img/colleagues-icon2.svg" alt=""></div>
+                <div class="colleagues-box__body">
+                  <p>Малый и средний бизнес</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-20">
+              <div class="colleagues-box">
+                <div class="colleagues-box__icon"><img src="img/colleagues-icon3.svg" alt=""></div>
+                <div class="colleagues-box__body">
+                  <p>Предприятия</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-20">
+              <div class="colleagues-box">
+                <div class="colleagues-box__icon"><img src="img/colleagues-icon4.svg" alt=""></div>
+                <div class="colleagues-box__body">
+                  <p>Агенства</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback-section-v2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Свяжитесь с нами</h2>
+          <div class="box-text">
+            <p>Мы найдем лучшее решение вашей задачи</p>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <form method="post" class="form form-call">
+
+            <div class="form-group">
+              <span class="input-title">Имя <sup>*</sup></span>
+              <label>
+                <input type="text" class="form-control" name="form-name" placeholder="Введите ваше имя"
+                       required="">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <span class="input-title">Телефон <sup>*</sup></span>
+              <label>
+                <input type="tel" pattern="([0-9]|\+){0,4}[0-9]{3,4}[0-9]{3}[0-9]{4}" maxlength="16"
+                       class="form-control" name="form-phone" placeholder="Введите Ваш номер телефона"
+                       required="">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <span class="input-title">Компания <sup>*</sup></span>
+              <label>
+                <input type="text" class="form-control" name="form-company" placeholder="Введите название компании"
+                       required="">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <span class="input-title">Город <sup>*</sup></span>
+              <label>
+                <input type="text" class="form-control" name="form-city" placeholder="Введите город"></label>
+            </div>
+
+            <div class="form-group">
+              <span class="input-title">E-mail <sup>*</sup></span>
+              <label>
+                <input type="email" class="form-control" name="form-email" placeholder="Введите ваш e-mail" required=""></label>
+            </div>
+
+            <div class="form-group">
+              <div class="form-file">
+                <div class="box-file">
+                  <label class="label-file">
+                    <input type="file" class="inp-file">
+                    <span class="label-file__text">Выбрать файл</span>
+                  </label>
+                  <div class="label-file__result">Тут будет имя файла...</div>
+                </div>
+                <a href="#" class="btn btn-accent-scs">Загрузить</a>
+              </div>
+            </div>
+
+            <div class="form-group-message">
+              <span class="input-title">Сообщение</span>
+              <label>
+                <textarea name="form-comment" class="form-control"
+                          placeholder="Введите ваше сообщение"></textarea>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox" required="" checked>
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Я согласен на <a
+                    href="#">обработку персональных данных</a></span>
+              </label>
+
+              <button type="submit" class="btn btn-accent">Отправить</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="footer-top">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4"><h3>Следите за обновлениями</h3></div>
+              <div class="col-12 col-lg-8">
+                <form method="post" class="form-subscribe">
+                  <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                  <label><input type="text" placeholder="Ваш E-mail" name="mail"></label>
+                  <button type="submit" class="btn btn-accent btn-lg">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-center">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                <div class="info-company">
+                  <p>Головной офис NEKTA</p>
+
+                  <div class="address">Россия, Самарская обл., г. Тольятти
+                    Ул. Юбилейная, 29, оф. 202
+                  </div>
+
+                  <a href="tel:+78482903020" class="info-company__links">+7 8482 90 30 20</a>
+                  <a href="mailto:info@nekta.tech" class="info-company__links">info@nekta.tech</a>
+
+
+                </div>
+
+                <div class="footer-box">
+                  <h3>Мы в социальных сетях</h3>
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#in"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-8 d-flex flex-wrap">
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Продукты</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">NEKTA Cloud</a></li>
+                      <li><a href="#">NEKTA Server</a></li>
+                      <li><a href="#">NEKTA Core</a></li>
+                      <li><a href="#">Приложение NEKTA</a></li>
+                      <li><a href="#">flespi</a></li>
+                      <li><a href="#">GPS-Trace</a></li>
+                      <li><a href="#">Gurtam Maps</a></li>
+                      <li><a href="#">Серверный центр</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Сообщество</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">Карта партнеров</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                      <li><a href="#">Разработчики ПО</a></li>
+                      <li><a href="#">Библиотека кейсов</a></li>
+                      <li><a href="#">Техподдержка</a></li>
+                      <li><a href="#">Обучение</a></li>
+                      <li><a href="#">Вебинары</a></li>
+                      <li><a href="#">Маркетинг</a></li>
+                      <li><a href="#">Выставки</a></li>
+                      <li><a href="#">Справочный центр</a></li>
+                      <li><a href="#">Форум</a></li>
+                      <li><a href="#">Блог</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Компания</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Команда</a></li>
+                      <li><a href="#">Карьера</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">История</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-box">
+                    <h3>Оборудование</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">GPS и ГЛОНАСС оборудование</a></li>
+                      <li><a href="#">Производители оборудования</a></li>
+                      <li><a href="#">Новости производителей</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-bottom">
+            <div class="copyright">Copyright © 2017-2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

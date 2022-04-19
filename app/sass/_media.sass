@@ -1,9 +1,10 @@
 @import "vars"
 
-/* Large Devices, Wide Screens
+
 @media only screen and (max-width: 1810px)
   .phone
     margin: 0
+
 
 @media only screen and (max-width: 1700px)
   .header-top
@@ -25,9 +26,11 @@
     .links-cabinet
       margin: 0 20px
 
+
 @media only screen and (max-width: 1640px)
   .menu
     margin: 0 auto
+
 
 @media only screen and (max-width: 1440px)
   .menu
@@ -46,9 +49,18 @@
   .home_1
     background-size: cover
 
+
+@media only screen and (max-width: 1240px)
+  header .container-fluid
+    padding: 0 15px
+
 @media only screen and (max-width: 1200px)
   header
     padding: 20px 0
+    .logo
+      margin: 0 auto 0 0
+    .btn-call
+      margin: 0 0 0 20px
 
     .container
       margin: 0 10px 0 auto
@@ -121,6 +133,16 @@
 
     &:last-child
       margin: 0
+
+  .map-page
+    padding: 80px 0 60px
+
+  .partners-line-box
+    width: 20%
+    padding: 10px 15px
+
+  .partners-line
+    padding: 30px 0
 
 @media only screen and (max-width: 992px)
   .home-img
@@ -252,6 +274,15 @@
     &:last-child
       margin: 20px 0 0
 
+  .warranty-design
+    padding: 60px 0
+    h2
+      margin: 0 0 20px
+
+  .warranty-design__img
+    margin: 20px 0
+
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 768px)
   header
@@ -345,6 +376,14 @@
     li
       margin: 0 0 10px
 
+  .map-advantages-box
+    width: 100%
+    padding: 30px
+
+  .partners-line-box
+    width: 25%
+
+
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
   .advantages-box
@@ -398,6 +437,9 @@
   .footer-col
     width: 100%
 
+  .partners-line-box
+    width: 33.3%
+
 @media only screen and (max-width: 480px)
   header
     .list-language, .links-cabinet
@@ -419,6 +461,10 @@
 
   h2
     font-size: 24px
+
+  .partners-line-box
+    width: 50%
+
 
 /* Large Devices, Wide Screens
 @media only screen and (max-width: 1810px)
@@ -534,6 +580,12 @@
 
     &:last-child
       margin: 0
+
+  .callback-section-v2
+    margin: 100px 0
+
+  .colleagues
+    padding: 80px 0
 
 /* Medium Devices, Desktops
 @media only screen and (max-width: 992px)
@@ -671,7 +723,49 @@
   .form-filter
     margin: 20px 0 0
 
+  .callback-section-v2
+    margin: 80px 0
+    .box-text
+      margin: 0 0 20px
+    .form-call .form-group
+      width: 100%
 
+  .similar-cases
+    padding: 70px 0
+
+  .home-case-page__img
+    height: auto
+    position: relative
+    top: 0
+    right: 0
+    min-width: auto
+    width: 100%
+
+  .home-case-page
+    .home-content
+      margin: 70px 0 30px
+
+  .principles-wrapper
+    border-top: none
+
+  .principles
+    .no-border
+      border-top: 1px solid #E5E8E9
+    .about .box-text
+      margin: 0
+
+  .technologies
+    margin: 0 0 50px
+
+  .stages-development
+    padding: 60px 0
+
+  .models-box
+    padding: 30px
+
+  .colleagues .box-text
+    margin: 0 0 30px
+    max-width: none
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 768px)
@@ -775,7 +869,18 @@
       max-width: none
       width: calc(50% - 5px)
 
-/* Extra Small Devices, Phones
+  .home-case-page h1
+    font-size: 30px
+
+  .home-case-page .home-content
+    margin: 40px 0 30px
+
+  .mb-40
+    margin-bottom: 30px
+
+  .btn-all-cases
+    margin: 0 auto
+
 @media only screen and (max-width: 576px)
   .advantages-box
     width: 100%
@@ -840,6 +945,12 @@
   .breadcrumb-nav
     margin: 0 0 40px
 
+  .box-file
+    width: 100%
+
+  .form-file .btn
+    margin: 20px auto 0
+
 @media only screen and (max-width: 480px)
   header
     .list-language, .links-cabinet
@@ -855,9 +966,29 @@
     label, button
       width: 100%
 
+  .box-file
+    flex-wrap: wrap
+
+  .label-file
+    max-width: 100%
+
+  .label-file__result
+    width: 100%
+    padding: 10px
 
 
-/* Custom, iPhone Retina
+  .label-file__text
+    max-width: none
+    border: none
+      bottom: 1px solid #CCCCCC
+
+  .home-case-page h1
+    font-size: 28px
+
+  .warranty-design-item
+    margin: 0 0 30px
+
+
 @media only screen and (max-width: 420px)
   header .phone
     display: none
@@ -867,3 +998,12 @@
 
   h2
     font-size: 24px
+
+  .list-schedule li
+    margin: 0 5px 5px 0
+    &:last-child
+      margin: 0 0 5px
+
+  .warranty-design-item__num
+    font-size: 30px
+    min-width: 60px
