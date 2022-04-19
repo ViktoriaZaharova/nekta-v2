@@ -1649,11 +1649,13 @@ strong
   display: flex
   align-items: flex-start
   width: 100%
-
+  justify-content: space-between
   label
-    max-width: 270px
-    width: 100%
-    margin: 0 10px 0 0
+    width: calc(33.3% - 65px)
+  button
+    width: 170px
+    padding: 0 10px
+    height: 54px
 
 .select2-container
   width: 100%
@@ -1691,6 +1693,12 @@ strong
     .select2-selection__clear
       display: none
 
+.select2-container--default .select2-selection--multiple
+  padding: 0
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered
+  padding: 0 0 0 20px
+
 .select2-container--default .select2-selection--multiple .select2-selection__rendered li
   background: transparent
   border: none
@@ -1698,21 +1706,26 @@ strong
   padding: 0
   height: auto
   &.select2-selection__choice
-    margin: 0 0 0 10px
+    margin: 0 10px 0 0
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove
   display: none
 
 .select2-container--default .select2-search--inline .select2-search__field
   margin: 0
-  padding: 0 20px
-  border-radius: 0
-  height: 100%
+  position: absolute
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  vertical-align: middle
   color: #212121
-  font-size: 16px
-  font-family: $default-font
+  top: 50%
+  transform: translate(0,-50%)
+  padding: 0 20px
   &::placeholder
     color: #212121
+
 
 .select2-container--default.select2-container--focus .select2-selection--multiple
   border: 1px solid #E5E8E9
@@ -1733,6 +1746,10 @@ strong
   position: relative
   display: flex
   align-items: flex-start
+  &:last-child
+    margin: 0
+
+.dropdown-select-checkbox  .select2-results__option
   &:before
     content: ''
     width: 20px
@@ -1750,7 +1767,7 @@ strong
   color: #212121
 
 
-.select2-container--default .select2-results__option[aria-selected=true]
+.select2-container--default .dropdown-select-checkbox .select2-results__option--selected
   background: transparent
   &:after
     content: ''
@@ -1763,5 +1780,222 @@ strong
       size: 100%
 
 
+.select2-container--default .select2-selection--single
+  height: 54px
+  border: 1px solid #E5E8E9
+    radius: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: #fff
+  padding: 0 20px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  height: 100%
+  display: flex
+  align-items: center
+  padding: 0
+
+.select2-container--default .select2-results__option--selected
+  background: transparent
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  position: relative
+  top: 0
+  right: 0
+  background: url("../img/arrow-bottom.svg") no-repeat center
+    size: 100%
+  width: 12px
+  height: 12px
+  b
+    display: none
+
+.select2-search--dropdown
+  display: none
+
+.filter-select
+  label
+    width: calc(50% - 95px)
+  .select2-results__option:before
+    display: none
+
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder
+  color: #212121
+  font-size: 16px
+
+.dropdown-select-my
+  li
+    margin: 0 0 10px
+
+
+.dropdown-select-products
+  .select2-results__options
+    .select2-results__option
+      font-size: 16px
+      font-weight: 500
+      display: flex
+      align-items: center
+      margin: 0 0 10px
+      &:before
+        content: ''
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 35px
+        height: 35px
+        min-width: 35px
+        border-radius: 5px
+        margin: 0 10px 0 0
+      &:first-child
+        &:before
+          background: url("../img/icon-service1.svg") no-repeat center #2F4050
+            size: 18px
+      &:nth-child(2)
+        &:before
+          background: url("../img/icon-service2.svg") no-repeat center #2F4050
+            size: 18px
+      &:nth-child(3)
+        &:before
+          background: url("../img/icon-service3.svg") no-repeat center #2F4050
+            size: 18px
+
+.map-wrapper
+  position: relative
+  width: 100%
+
+.map
+  position: relative
+  width: 100%
+  height: 820px
+  iframe
+    width: 100%
+    height: 100%
+
+.search-country
+  width: 100%
+  position: absolute
+  z-index: 2
+  padding: 10px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  label
+    width: calc(33.3% - 20px)
+    position: relative
+    margin: 0
+  input
+    padding: 0 39px 0 46px
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+    height: 50px
+    border-radius: 2px
+    background: #fff
+    font-size: 16px
+    color: #888888
+    &::placeholder
+      color: #888888
+
+.input-icon
+  position: absolute
+  width: 16px
+  height: 16px
+  left: 20px
+  top: 50%
+  transform: translate(0,-50%)
+  display: flex
+  align-items: center
+  justify-content: center
+
+.input-icon-pin
+  fill: #888888
+
+.input-clear
+  top: 50%
+  transform: translate(0,-50%)
+  right: 19px
+  width: 16px
+  height: 16px
+  display: none
+  align-items: center
+  justify-content: center
+  position: absolute
+  fill: #2F4050
+  cursor: pointer
+
+.label-active
+  .input-icon-pin
+    fill: #212121
+
+  .input-clear
+    display: flex
+
+.select2-container--default .select2-selection--single .select2-selection__clear
+  order: 1
+  margin: 0 0 0 auto
+  width: 16px
+  height: 16px
+  background: url("../img/close.svg") no-repeat center
+    size: 100%
+  >span
+    display: none
+
+.label-country
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+    display: none
+  .select2-container--default .select2-selection--single
+    border: none
+      radius: 2px
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+    padding: 0 19px 0 46px
+    color: #212121
+    font-size: 16px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 16px
+      height: 16px
+      left: 20px
+      top: 50%
+      transform: translate(0,-50%)
+      display: flex
+      align-items: center
+      justify-content: center
+      background: url("../img/pin.svg") no-repeat center
+        size: 100%
+  .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple
+    border-radius: 2px
+
+.dropdown-select-country
+  margin: 10px 0 0
+
+.select2-container--default .dropdown-select-country .select2-results>.select2-results__options
+  max-height: 620px
+
+
+.select2-container--open .dropdown-select-country
+  border-radius: 2px
+  padding: 0 6px 0 0
+  border: none
+  .select2-results__option
+    margin: 0
+    padding: 11px 13px
+    color: #212121
+    font-size: 16px
+    display: flex
+    align-items: center
+    &:before
+      content: ''
+      background: url("../img/pin.svg") no-repeat center
+        size: 100%
+      width: 16px
+      height: 16px
+      min-width: 16px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 10px 0 0
+  .select2-results__option--highlighted[aria-selected]
+    background: #F2F6F7
 
 @import "media"

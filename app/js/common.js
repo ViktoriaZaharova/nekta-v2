@@ -195,7 +195,8 @@ $(".js-select2-1").select2({
     // allowHtml: true,
     allowClear: true,
     tags: true, // создает новые опции на лету,
-    width: '100%'
+    width: '100%',
+    dropdownCssClass: "dropdown-select-checkbox"
 });
 
 $(".js-select2-2").select2({
@@ -204,7 +205,8 @@ $(".js-select2-2").select2({
     // allowHtml: true,
     allowClear: true,
     tags: true, // создает новые опции на лету,
-    width: '100%'
+    width: '100%',
+    dropdownCssClass: "dropdown-select-checkbox"
 });
 
 $(".js-select2-3").select2({
@@ -213,5 +215,29 @@ $(".js-select2-3").select2({
     // allowHtml: true,
     allowClear: true,
     tags: true, // создает новые опции на лету,
-    width: '100%'
+    width: '100%',
+    dropdownCssClass: "dropdown-select-checkbox"
 });
+
+$(".select-my2").select2({
+    placeholder : "Программные продукты",
+    width: '100%',
+    allowClear: false,
+    dropdownCssClass: "dropdown-select-products"
+});
+
+$(".select-my1").select2({
+    placeholder: "Услуги",
+    allowClear: false,
+    width: '100%',
+    dropdownCssClass: "dropdown-select-my"
+});
+
+$(".select-my-country").select2({
+    placeholder: "Страна",
+    allowClear: true,
+    width: '100%',
+    dropdownCssClass: "dropdown-select-country"
+});
+
+

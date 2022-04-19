@@ -21,6 +21,7 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/main.css">
@@ -236,152 +237,86 @@
   </header>
 
 
-  <section class="callback-page page">
+  <section class="map-page page cases-page">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h1>Узнать цены и получить тестовую версию NEKTA</h1>
+        <div class="col-12 text-center">
+          <h1>Карта партнеров NEKTA. <br>
+            Поиск партнера NEKTA в вашем регионе.</h1>
 
           <div class="box-text">
-            <p>Мы готовы предоставить вам более подробную информацию о стоимости и возможностях решений NEKTA для
-              автоматизированного сбора и учёта энергоресурсов и предложить пробную версию нашего программного
-              обеспечения. Для этого необходимо заполнить форму, которая находится ниже.
-              Наши специалисты свяжутся с вами.</p>
+            <p>Наши продукты доступны компаниям в любом регионе благодаря партнерскому сообществу NEKTA. Более 100
+              партнеров по всему миру готовы помочь вам улучшить свой бизнес с помощью NEKTA. Используйте карту для
+              поиска ближайшего к вам партнера; все, что необходимо сделать – кликнуть на точку офиса на карте, нажать
+              на кнопку «Отправить заявку», заполнить появившуюся форму.
+              После этого партнер NEKTA свяжется с вами для выяснения деталей.</p>
           </div>
         </div>
 
         <div class="col-12">
-          <form method="post" class="form form-call">
+          <div class="filter-case">
+            <h4>Фильтр по кейсам</h4>
+            <form method="post" class="form form-filter filter-select">
 
-            <div class="form-group">
-              <span class="input-title">Имя <sup>*</sup></span>
               <label>
-                <input type="text" class="form-control" name="form-name" placeholder="Введите ваше имя"
-                       required="">
-              </label>
-            </div>
-
-            <div class="form-group">
-              <span class="input-title">Компания <sup>*</sup></span>
-              <label>
-                <input type="text" class="form-control" name="form-company" placeholder="Введите название компании"
-                       required="">
-              </label>
-            </div>
-
-            <div class="form-group">
-              <span class="input-title">E-mail <sup>*</sup></span>
-              <label>
-                <input type="email" class="form-control" name="form-email" placeholder="Введите ваш e-mail" required=""></label>
-            </div>
-
-            <div class="form-group">
-              <span class="input-title">Телефон <sup>*</sup></span>
-              <label>
-                <input type="tel" pattern="([0-9]|\+){0,4}[0-9]{3,4}[0-9]{3}[0-9]{4}" maxlength="16"
-                       class="form-control" name="form-phone" placeholder="Введите Ваш номер телефона"
-                       required="">
-              </label>
-            </div>
-
-            <div class="form-group">
-              <span class="input-title">Город <sup>*</sup></span>
-              <label>
-                <input type="text" class="form-control" name="form-city" placeholder="Введите город"></label>
-            </div>
-
-            <div class="form-group">
-              <span class="input-title">Откуда вы узнали о нас? <sup>*</sup></span>
-              <label>
-                <select class="form-control select" name="form-source" required="">
-                  <option value="">Не выбрано</option>
-                  <option value="Реклама в интернете">Реклама в интернете</option>
-                  <option value="Из поисковой системы">Из поисковой системы</option>
-                  <option value="Email-рассылка">Email-рассылка</option>
-                  <option value="Увидел(а) на выставке">Увидел(а) на выставке</option>
-                  <option value="Узнал(а) от знакомых">Узнал(а) от знакомых</option>
-                  <option value="Другое (напишите в поле “Комментарий”)">Другое (напишите в поле “Комментарий”)</option>
+                <select class="js-example-basic-single select-my2">
+                  <option value=""></option>
+                  <option value="Мобильное приложение">NEKTA Cloud</option>
+                  <option value="IoT решения">NEKTA Server</option>
+                  <option value="BI системы">NEKTA CS</option>
                 </select>
-                <!-- <input type="text" class="form-control" name="form-city" placeholder="Введите город"></label> -->
-              </label></div>
+              </label>
 
-            <div class="form-group-message form-collapse">
-              <a class="btn--more" data-toggle="collapse" href="#collapse-more" role="button" aria-expanded="false"
-                 aria-controls="collapse-more">
-                Ответьте ещё на несколько вопросов, что бы нам лучше Вас понимать
-              </a>
-              <div class="collapse" id="collapse-more">
-                <div class="collapse-container">
-                  <div class="radio-target">
-                    <span class="input-title">Цели приобретения NEKTA</span>
-                    <label class="radio">
-                      <input type="radio" name="radio1" class="inp-radio" checked>
-                      <span class="radio-default"></span>
-                      <span class="radio-text">Сбор данных с собственного оборудования</span>
-                    </label>
-
-                    <label class="radio">
-                      <input type="radio" name="radio1" class="inp-radio">
-                      <span class="radio-default"></span>
-                      <span class="radio-text">Хотите стать диллером в сфере автоматизации</span>
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <span class="input-title">Планируемое количество устройств мониторинга</span>
-                    <label>
-                      <input type="number" class="form-control" name="form-plan-count"
-                             placeholder="Количество устройств (только число)"></label>
-
-                    <span class="input-title">Текущая система мониторинга, если используете</span>
-                    <label>
-                      <input type="text" class="form-control" name="form-current-system"
-                             placeholder="Укажите название"></label>
-
-                    <span class="input-title">Оборудование, которое планируете использовать</span>
-                    <label>
-                      <input type="text" class="form-control" name="form-plan-devices"
-                             placeholder="Укажите название"></label>
-                  </div>
-
-
-                </div>
-
-
-              </div>
-            </div>
-
-            <div class="form-group-message">
-              <span class="input-title">Комментарий</span>
               <label>
-                <textarea name="form-comment" class="form-control"
-                          placeholder="Введите ваш комментарий"></textarea>
-              </label>
-            </div>
-
-            <div class="form-row">
-              <label class="checkbox">
-                <input class="checkbox-inp" type="checkbox" name="checkbox" required="" checked>
-                <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Я согласен на <a
-                    href="#">обработку персональных данных</a></span>
+                <select class="js-example-basic-single select-my1">
+                  <option value=""></option>
+                  <option value="Продажа оборудования">Продажа оборудования</option>
+                  <option value="Проектно-исследовательская работа">Проектно-исследовательская работа</option>
+                  <option value="Строительно-монтажные работы">Строительно-монтажные работы</option>
+                </select>
               </label>
 
-              <button type="submit" class="btn btn-accent">Отправить</button>
-            </div>
+              <button type="submit" class="btn btn-grey">Очистить фильтр</button>
+            </form>
+          </div>
+        </div>
 
-            <!--thanks message-->
-            <div class="success-messages">
-              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="17.5" cy="17.5" r="17.5" fill="white"></circle>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M13.6364 23.2388L7.90909 17.597L6 19.4776L13.6364 27L30 10.8806L28.0909 9L13.6364 23.2388Z"
-                      fill="#2F4050"></path>
-              </svg>
-              <p>Спасибо! Ваши данные отправлены.<br>Наш специалист свяжется с вами.</p>
-            </div>
+        <div class="col-12">
+          <div class="map-wrapper">
+            <form method="post" class="search-country">
+              <label class="label-active label-country">
+                <select class="js-example-basic-single select-my-country">
+                  <option value=""></option>
+                  <option value="Австралия">Австралия</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                  <option value="Аландские острова">Аландские острова</option>
+                  <option value="Албания">Албания</option>
+                  <option value="Алжир">Алжир</option>
+                  <option value="Американское Самоа">Американское Самоа</option>
+                  <option value="Ангола">Ангола</option>
+                  <option value="Ангуилья">Ангуилья</option>
+                  <option value="Андорра">Андорра</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                </select>
 
-            <!--thanks message end-->
-          </form>
+<!--                <span class="input-icon input-icon-pin"><svg class="svg-icon"><use xlink:href="img/sprite.svg#pin"></use></svg></span>-->
+<!--                <input type="text" placeholder="Страна" name="country">-->
+<!--                <span class="input-clear"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>-->
+              </label>
+            </form>
+
+            <div class="map">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42239550.49239541!2d68.79375059847196!3d49.746608011732896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2z0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1650360839205!5m2!1sru!2sua"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -541,6 +476,8 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
