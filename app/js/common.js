@@ -20,15 +20,15 @@ $('.news-slider').slick({
 });
 
 // slick active
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 992) {
         $('.nav-tabs').each(function () {
-           $(this).find('.nav-link').removeAttr('data-toggle');
-           $(this).find('.nav-link').removeAttr('href');
-           $(this).find('.nav-link').removeAttr('id');
-           $(this).find('.nav-link').removeAttr('role');
-           $(this).find('.nav-link').removeAttr('aria-controls');
-           $(this).find('.nav-link').removeClass('active');
+            $(this).find('.nav-link').removeAttr('data-toggle');
+            $(this).find('.nav-link').removeAttr('href');
+            $(this).find('.nav-link').removeAttr('id');
+            $(this).find('.nav-link').removeAttr('role');
+            $(this).find('.nav-link').removeAttr('aria-controls');
+            $(this).find('.nav-link').removeClass('active');
         });
 
         $('.nav-tabs-application').each(function () {
@@ -150,12 +150,57 @@ $('.partners-slider').slick({
     ]
 });
 
+$('.partners-line-wrapper').slick({
+    slidesToShow: 8,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [{
+        breakpoint: 1700,
+        settings: {
+            slidesToShow: 7,
+        }
+    },
+        {
+            breakpoint: 1500,
+            settings: {
+                slidesToShow: 6,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+
+    ]
+});
+
 // показать карточку товара по наведению в зависимости от значениея data-tab
 $(document).ready(function () {
     $(".js-tab-trigger").hover(function () {
         $('header').addClass('hover');
         var id = $(this).attr('data-tab'),
-            content = $('.js-tab-content[data-tab="'+ id +'"]');
+            content = $('.js-tab-content[data-tab="' + id + '"]');
 
         $('.js-tab-trigger.active').removeClass('active'); // 1
         $(this).addClass('active'); // 2
@@ -177,7 +222,7 @@ $(document).mouseout(function (e) { // событие клика по веб-д�
 
 // mobile menu
 $('.btn-burger').on('click', function () {
-   $('.mobile-menu').fadeToggle();
+    $('.mobile-menu').fadeToggle();
 });
 
 $('.btn-close-menu').on('click', function () {
@@ -190,8 +235,8 @@ $('.mobile-menu-toggle').on('click', function (e) {
 });
 
 $(".js-select2-1").select2({
-    closeOnSelect : false,
-    placeholder : "Отрасли",
+    closeOnSelect: false,
+    placeholder: "Отрасли",
     // allowHtml: true,
     allowClear: true,
     tags: true, // создает новые опции на лету,
@@ -200,8 +245,8 @@ $(".js-select2-1").select2({
 });
 
 $(".js-select2-2").select2({
-    closeOnSelect : false,
-    placeholder : "Направления",
+    closeOnSelect: false,
+    placeholder: "Направления",
     // allowHtml: true,
     allowClear: true,
     tags: true, // создает новые опции на лету,
@@ -210,8 +255,8 @@ $(".js-select2-2").select2({
 });
 
 $(".js-select2-3").select2({
-    closeOnSelect : false,
-    placeholder : "Технологии",
+    closeOnSelect: false,
+    placeholder: "Технологии",
     // allowHtml: true,
     allowClear: true,
     tags: true, // создает новые опции на лету,
@@ -220,8 +265,10 @@ $(".js-select2-3").select2({
 });
 
 $(".select-my2").select2({
-    placeholder : "Программные продукты",
+    placeholder: "Программные продукты",
     width: '100%',
+    tags: true,
+    closeOnSelect: false,
     allowClear: false,
     dropdownCssClass: "dropdown-select-products"
 });
@@ -229,6 +276,8 @@ $(".select-my2").select2({
 $(".select-my1").select2({
     placeholder: "Услуги",
     allowClear: false,
+    tags: true,
+    closeOnSelect: false,
     width: '100%',
     dropdownCssClass: "dropdown-select-my"
 });
@@ -254,6 +303,19 @@ $(".select-my-country3").select2({
     dropdownCssClass: "dropdown-select-country"
 });
 
+$('.js-example-basic-multiple').on('change', function (e) {
+
+    let countPlus = $(e.currentTarget).val().length - 1;
+
+    // $('#plusId').remove(); // удаляем span с +1.
+    if (countPlus > 0) { // добавляем span с +1
+        $('.select2-container--open').find('ul.select2-selection__rendered > li').hide();
+        $('.select2-container--open').find('ul.select2-selection__rendered')
+            .append($(`<span class="my-selection-class" >Выбрано: ${countPlus + 1}</span>`));
+    }
+});
+
+
 $('.search-country-modal__close').on('click', function () {
-   $(this).parents('.search-country-modal').fadeOut();
+    $(this).parents('.search-country-modal').fadeOut();
 });

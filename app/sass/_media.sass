@@ -138,7 +138,6 @@
     padding: 80px 0 60px
 
   .partners-line-box
-    width: 20%
     padding: 10px 15px
 
   .partners-line
@@ -282,6 +281,15 @@
   .warranty-design__img
     margin: 20px 0
 
+  .description-case
+    margin: 40px 0
+
+  .share
+    flex-direction: column
+    align-items: center
+    .list-social
+      margin: 10px 0 0
+
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 768px)
@@ -379,9 +387,9 @@
   .map-advantages-box
     width: 100%
     padding: 30px
+    &:before
+      display: none
 
-  .partners-line-box
-    width: 25%
 
 
 /* Extra Small Devices, Phones
@@ -437,8 +445,14 @@
   .footer-col
     width: 100%
 
-  .partners-line-box
-    width: 33.3%
+  .share
+    width: 100%
+    margin: 10px 0
+    justify-content: center
+
+  .description-case
+    .links-next
+      margin: 0 auto
 
 @media only screen and (max-width: 480px)
   header
@@ -461,10 +475,6 @@
 
   h2
     font-size: 24px
-
-  .partners-line-box
-    width: 50%
-
 
 /* Large Devices, Wide Screens
 @media only screen and (max-width: 1810px)
