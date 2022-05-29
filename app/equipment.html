@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nekta</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="#" class="mobile-menu-toggle">Продукты</a>
+        <div class="mobile-menu-sub">
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Оборудование</a></li>
+      <li><a href="#" class="mobile-menu-toggle">Сообщество</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">Карта партнеров</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Разработчики ПО</a></li>
+            <li><a href="#">Библиотека кейсов</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Вебинары</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Выставки</a></li>
+            <li><a href="#">Справочный центр</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" class="mobile-menu-toggle">Компания</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+    <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+    <ul class="list-language">
+      <li><a href="#" class="active">RU</a></li>
+      <li><a href="#">Eng</a></li>
+      <li>
+        <a href="#" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <header>
+    <div class="header-top">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <ul class="menu">
+              <li><a href="#" class="js-tab-trigger" data-tab="1">Продукты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="2">Сообщество</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="3">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+
+            <ul class="list-language">
+              <li><a href="#" class="active">RU</a></li>
+              <li><a href="#">Eng</a></li>
+            </ul>
+
+            <a href="#" class="links-cabinet">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+            </a>
+
+            <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+            <a href="#" class="btn btn-accent btn-call">Оставить заявку</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="header-bottom js-tab-content" data-tab="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Карта партнеров</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Разработчики ПО</a></li>
+              <li><a href="#">Библиотека кейсов</a></li>
+              <li><a href="#">Техподдержка</a></li>
+              <li><a href="#">Обучение</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вебинары</a></li>
+              <li><a href="#">Маркетинг</a></li>
+              <li><a href="#">Выставки</a></li>
+              <li><a href="#">Справочный центр</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Карьера</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-case-page home-equipment-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb-nav">
+            <ol class="breadcrumb breadcrumb-white">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Поддерживаемое оборудование</li>
+            </ol>
+          </nav>
+        </div>
+
+
+        <div class="col-12 col-lg-8">
+          <div class="home-content">
+            <h1>Поддерживаемое оборудование</h1>
+            <div class="box-text">
+              <p>Система NEKTA универсальна. Сегодня с ней совместимо более 300 типов устройств, включая
+                электросчётчики,
+                водосчтётчики, автомобильные контроллеры. NEKTA также способен обрабатывать данные, приходящие от
+                дополнительных датчиков и других устройств.</p>
+
+              <p>Ниже представлен список оборудования, которые можно использовать в решениях NEKTA. Вы можете подобрать
+                себе подходящее устройство, используя сортировку по различным параметрам.</p>
+
+              <p>Если Вы не нашли своё оборудование в списке поддерживаемого - оставьте нам заявку на интеграцию по
+                адресу
+                <a href="mailto:hw@nekta.tech" class="d-inline text-decoration color-white">hw@nekta.tech</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="home-case-page__img"><img src="img/equipment-img.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="equipment-page page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-start">
+          <div class="equipment-sidebar">
+            <div class="btn-close-sidebar"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+
+            <div class="equipment-sidebar-box">
+              <h3>Тип устройства</h3>
+
+              <ul class="list-equipment">
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">GSM/GPRS-модем</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Базовая станция</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Весовой терминал</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик влажности</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик движения</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик дыма</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик открытия</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик температуры</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик ускорения (Удара)</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчики СО2</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Другое</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Конвертер</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Модем</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Радиомодем цифровой</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик воды</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик газа</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик импульсов</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик электричества</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Тепловычислитель</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Теплосчетчик</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Тестер сети</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Трекер</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Универсальный модем</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="equipment-sidebar-box">
+              <h3>Особенности устройства</h3>
+
+              <ul class="list-equipment">
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">1-WIRE</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">CAN</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Ethernet</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">GSM/GPRS</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">LoRaWAN</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик дыма</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик открытия</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик температуры</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчик ускорения (Удара)</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Датчики СО2</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Другое</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Конвертер</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Модем</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Радиомодем цифровой</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик воды</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик газа</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик импульсов</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Счетчик электричества</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Тепловычислитель</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Теплосчетчик</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Тестер сети</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Трекер</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox" class="checkbox-inp">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Универсальный модем</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="equipment-content">
+            <div class="equipment-content__top">
+              <form class="form-search">
+                <label><input type="text" placeholder="Поиск новости" required name="search"></label>
+                <button class="btn-search" type="submit"><img src="img/search.svg" alt=""></button>
+              </form>
+
+              <ul class="nav nav-pills nav-tabs-equipment" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab"
+                     aria-controls="pills-list" aria-selected="true">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tab-list"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-card-tab" data-toggle="pill" href="#pills-card" role="tab"
+                     aria-controls="pills-card" aria-selected="false">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tab-card"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="#" class="btn-filter btn btn-accent">Фильтр</a>
+            </div>
+
+
+            <div class="equipment-content__body">
+
+              <div class="tab-content tab-content-equipment">
+                <div class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+                  <div class="table-responsive">
+                    <div class="table-equipment">
+                      <div class="thead">
+                        <div class="tr">
+                          <div class="th">№</div>
+                          <div class="th">Устройство</div>
+                          <div class="th">Производитель</div>
+                          <div class="th">Устройство</div>
+                          <div class="th">Протокол</div>
+                        </div>
+                      </div>
+                      <div class="tbody">
+                        <a href="product.html" class="tr">
+                          <span class="td">1</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">2</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">3</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">4</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">5</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">6</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">7</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">8</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">9</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">10</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">11</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">12</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">13</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">14</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">15</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">16</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">17</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">18</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">19</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">20</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">21</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">22</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">23</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">24</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">25</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">26</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">27</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">28</span>
+                          <span class="td">NV1</span>
+                          <span class="td">Aktagor-Telecom</span>
+                          <span class="td">Счетчик импульсов</span>
+                          <span class="td">NB-IoT</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">29</span>
+                          <span class="td">GSM/GPRS модем SprutNet GL868 AC KIT</span>
+                          <span class="td">SprutNet</span>
+                          <span class="td">GSM/GPRS-модем</span>
+                          <span class="td">RS232/RS485</span>
+                        </a>
+
+                        <a href="product.html" class="tr">
+                          <span class="td">30</span>
+                          <span class="td">TELEOFIS ER108-L4U2 V2</span>
+                          <span class="td">ELEOFIS</span>
+                          <span class="td">Конвертер RS232/422/485 в Ethernet</span>
+                          <span class="td">RS-232/422/485</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq1.jpeg" alt=""></span>
+                        <span class="equipment-item__name">QALCOSONIC W1</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq2.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Cisco Wireless Gateway</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq3.png" alt=""></span>
+                        <span class="equipment-item__name">ДАТЧИК УМП</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq4.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Danfoss sonometer 500</span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq4.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Danfoss sonometer 500</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq3.png" alt=""></span>
+                        <span class="equipment-item__name">ДАТЧИК УМП</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq2.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Cisco Wireless Gateway</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq1.jpeg" alt=""></span>
+                        <span class="equipment-item__name">QALCOSONIC W1</span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq2.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Cisco Wireless Gateway</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq1.jpeg" alt=""></span>
+                        <span class="equipment-item__name">QALCOSONIC W1</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq4.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Danfoss sonometer 500</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq3.png" alt=""></span>
+                        <span class="equipment-item__name">ДАТЧИК УМП</span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq3.png" alt=""></span>
+                        <span class="equipment-item__name">ДАТЧИК УМП</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq2.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Cisco Wireless Gateway</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq1.jpeg" alt=""></span>
+                        <span class="equipment-item__name">QALCOSONIC W1</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq4.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Danfoss sonometer 500</span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq1.jpeg" alt=""></span>
+                        <span class="equipment-item__name">QALCOSONIC W1</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq2.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Cisco Wireless Gateway</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq3.png" alt=""></span>
+                        <span class="equipment-item__name">ДАТЧИК УМП</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq4.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Danfoss sonometer 500</span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq4.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Danfoss sonometer 500</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq3.png" alt=""></span>
+                        <span class="equipment-item__name">ДАТЧИК УМП</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq2.jpeg" alt=""></span>
+                        <span class="equipment-item__name">Cisco Wireless Gateway</span>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+                      <a href="product.html" class="equipment-item">
+                        <span class="equipment-item__img"><img src="img/eq1.jpeg" alt=""></span>
+                        <span class="equipment-item__name">QALCOSONIC W1</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="footer-top">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4"><h3>Следите за обновлениями</h3></div>
+              <div class="col-12 col-lg-8">
+                <form method="post" class="form-subscribe">
+                  <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                  <label><input type="text" placeholder="Ваш E-mail" name="mail"></label>
+                  <button type="submit" class="btn btn-accent btn-lg">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-center">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                <div class="info-company">
+                  <p>Головной офис NEKTA</p>
+
+                  <div class="address">Россия, Самарская обл., г. Тольятти
+                    Ул. Юбилейная, 29, оф. 202
+                  </div>
+
+                  <a href="tel:+78482903020" class="info-company__links">+7 8482 90 30 20</a>
+                  <a href="mailto:info@nekta.tech" class="info-company__links">info@nekta.tech</a>
+
+
+                </div>
+
+                <div class="footer-box">
+                  <h3>Мы в социальных сетях</h3>
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#in"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-8 d-flex flex-wrap">
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Продукты</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">NEKTA Cloud</a></li>
+                      <li><a href="#">NEKTA Server</a></li>
+                      <li><a href="#">NEKTA Core</a></li>
+                      <li><a href="#">Приложение NEKTA</a></li>
+                      <li><a href="#">flespi</a></li>
+                      <li><a href="#">GPS-Trace</a></li>
+                      <li><a href="#">Gurtam Maps</a></li>
+                      <li><a href="#">Серверный центр</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Сообщество</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">Карта партнеров</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                      <li><a href="#">Разработчики ПО</a></li>
+                      <li><a href="#">Библиотека кейсов</a></li>
+                      <li><a href="#">Техподдержка</a></li>
+                      <li><a href="#">Обучение</a></li>
+                      <li><a href="#">Вебинары</a></li>
+                      <li><a href="#">Маркетинг</a></li>
+                      <li><a href="#">Выставки</a></li>
+                      <li><a href="#">Справочный центр</a></li>
+                      <li><a href="#">Форум</a></li>
+                      <li><a href="#">Блог</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Компания</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Команда</a></li>
+                      <li><a href="#">Карьера</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">История</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-box">
+                    <h3>Оборудование</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">GPS и ГЛОНАСС оборудование</a></li>
+                      <li><a href="#">Производители оборудования</a></li>
+                      <li><a href="#">Новости производителей</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-bottom">
+            <div class="copyright">Copyright © 2017-2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

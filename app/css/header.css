@@ -22,16 +22,8 @@ header {
   z-index: 4;
   width: 100%;
   background: #fff; }
-  header .logo {
-    position: absolute;
-    left: 70px;
-    top: 30px; }
   header .container-fluid {
     padding: 0 70px; }
-  header .btn-call {
-    position: absolute;
-    right: 70px;
-    top: 22px; }
 
 .header-bottom {
   padding: 40px 0; }
@@ -42,7 +34,7 @@ header {
 
 .phone {
   color: #212121;
-  margin: 0 -50px 0 0;
+  margin: 0 20px 0 0;
   font-weight: 600;
   font-size: 16px; }
   .phone:hover {
@@ -100,7 +92,7 @@ header {
   flex-wrap: wrap;
   font-size: 14px;
   font-weight: 500;
-  margin: 0 auto 0 0; }
+  margin: 0 auto; }
   .menu li {
     margin: 0 40px 0 0; }
     .menu li:last-child {
@@ -303,7 +295,8 @@ header {
     background: url("../img/arrow-right.svg") no-repeat center;
     background-size: 100%;
     -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    margin-left: 10px; }
 
 .mobile-menu-sub {
   width: 100%;

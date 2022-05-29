@@ -19,6 +19,7 @@ $('.news-slider').slick({
     ]
 });
 
+
 // slick active
 $(window).on('load resize', function () {
     if ($(window).width() < 992) {
@@ -195,6 +196,61 @@ $('.partners-line-wrapper').slick({
     ]
 });
 
+
+$('.recommended-products-slider').slick({
+    slidesToShow: 4,
+    dots: true,
+    appendDots: '.recommended-products-slider__nav',
+    appendArrows: '.recommended-products-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+$('.product-gallery').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+});
+
+$('.product-gallery-preview').slick({
+    slidesToShow: 3,
+    asNavFor: '.product-gallery',
+    focusOnSelect: true,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    appendArrows: '.product-gallery-preview__nav',
+    responsive: [
+        {
+            breakpoint: 420,
+            settings: {
+                variableWidth: false,
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
+
 // показать карточку товара по наведению в зависимости от значениея data-tab
 $(document).ready(function () {
     $(".js-tab-trigger").hover(function () {
@@ -318,4 +374,58 @@ $('.js-example-basic-multiple').on('change', function (e) {
 
 $('.search-country-modal__close').on('click', function () {
     $(this).parents('.search-country-modal').fadeOut();
+});
+
+// toggle filter news
+$('.still-links').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('click').siblings('.sorting-list').toggleClass('open');
+});
+
+$('.datepicker').datepicker({
+    autoclose: true,
+    language: 'ru',
+    format: "mm",
+    viewMode: "months",
+    minViewMode: "months",
+});
+
+// hidden list > 5
+$('.list-equipment').each(function () {
+    if ($(this).find('li').length > 5) {
+        $(this).find('li').slice(5).hide();
+        $(this).parent('.equipment-sidebar-box').append('<a href="#" class="links-all-list text-decoration">Показать еще</a>');
+    }
+
+});
+
+
+$('.links-all-list').click(function (e) {
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parents('.equipment-sidebar-box').find('.list-equipment li');
+
+
+    if (!$this.hasClass('trigger')) {
+        $this.addClass('trigger');
+        $this.html('Скрыть');
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать еще');
+
+        content.slice(5).slideUp();
+    }
+});
+
+$('.btn-filter').on('click', function (e) {
+    e.preventDefault();
+    $('.equipment-sidebar').fadeToggle();
+});
+
+$('.btn-close-sidebar').on('click', function () {
+    $('.equipment-sidebar').fadeOut();
 });
