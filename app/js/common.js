@@ -385,7 +385,7 @@ $('.still-links').click(function (e) {
 $('.datepicker').datepicker({
     autoclose: true,
     language: 'ru',
-    format: "mm",
+    format: "mm-yyyy",
     viewMode: "months",
     minViewMode: "months",
 });
