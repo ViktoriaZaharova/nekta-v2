@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nekta</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="#" class="mobile-menu-toggle">Продукты</a>
+        <div class="mobile-menu-sub">
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Оборудование</a></li>
+      <li><a href="#" class="mobile-menu-toggle">Сообщество</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">Карта партнеров</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Разработчики ПО</a></li>
+            <li><a href="#">Библиотека кейсов</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Вебинары</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Выставки</a></li>
+            <li><a href="#">Справочный центр</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" class="mobile-menu-toggle">Компания</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+    <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+    <ul class="list-language">
+      <li><a href="#" class="active">RU</a></li>
+      <li><a href="#">Eng</a></li>
+      <li>
+        <a href="#" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <header>
+    <div class="header-top">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <ul class="menu">
+              <li><a href="#" class="js-tab-trigger" data-tab="1">Продукты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="2">Сообщество</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="3">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+
+            <ul class="list-language">
+              <li><a href="#" class="active">RU</a></li>
+              <li><a href="#">Eng</a></li>
+            </ul>
+
+            <a href="#" class="links-cabinet">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+            </a>
+
+            <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+            <a href="#" class="btn btn-accent btn-call">Оставить заявку</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="header-bottom js-tab-content" data-tab="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Карта партнеров</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Разработчики ПО</a></li>
+              <li><a href="#">Библиотека кейсов</a></li>
+              <li><a href="#">Техподдержка</a></li>
+              <li><a href="#">Обучение</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вебинары</a></li>
+              <li><a href="#">Маркетинг</a></li>
+              <li><a href="#">Выставки</a></li>
+              <li><a href="#">Справочный центр</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Карьера</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-case-page home-develop home-community">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Сообщество</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="home-content">
+            <h1>Сообщество NEKTA</h1>
+
+            <div class="box-text">
+              <h3>Сообщество NEKTA – объединение IoT-экспертов, пространство новых телеметрических проектов и
+                разработок.</h3>
+              <p>Более 50 компаний-партнеров, 20 производителей оборудования, разработчики программных решений на базе
+                продуктов NEKTA из 5 стран уже с нами. Совместные разработки в создании передовых бизнес-решений и
+                IoT-проектов, обмен опытом, технологиями, консалтинг в решении технических задач – это те, возможности,
+                которые привлекают специалистов сферы Интернета вещей присоединяться к нам.</p>
+            </div>
+
+            <a href="#" class="btn btn-accent">Вступить в сообщество</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="home-case-page__img"><img src="img/community.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="unites-community">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="font-700">Кого объединяет сообщество NEKTA</h3>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 order-lg-1">
+          <div class="unites-community-box">
+            <h4>ИНТЕГРАТОРЫ</h4>
+            <div class="box-text">
+              <p>Внедряйте продукты и Iot-решения NEKTA в проектах ваших клиентов. Используйте готовые решения или
+                участвуйте в разработке проектов Интернета вещей. Делимся опытом в сфере Iot, окажем технический
+                консалтинг по проектам.</p>
+            </div>
+          </div>
+          <div class="unites-community-box">
+            <h4>ТЕЛЕКОММУНИКАЦИОННЫЕ КОМПАНИИ</h4>
+            <div class="box-text">
+              <p>Предоставьте услуги по учету энергоресурсов компаний, мониторингу датчиков температуры и влажности,
+                охране объектов, управлению оборудованием и т.д. в дополнение к услугам связи. Поможем стать поставщиком
+                Iot-решений.</p>
+            </div>
+          </div>
+          <div class="unites-community-box">
+            <h4>ПРОИЗВОДИТЕЛИ ОБОРУДОВАНИЯ</h4>
+            <div class="box-text">
+              <p>Предложите платформу для учета ресурсов в комплекте с умными приборами. Оборудование и ПО NEKTA -
+                оптимальное решение: удобно заказчику, выгодно вам. Используйте NEKTA для демонстрации возможностей
+                своего оборудования.</p>
+            </div>
+          </div>
+          <div class="unites-community-box">
+            <h4>СЕРВИСНЫЕ КОМПАНИИ</h4>
+            <div class="box-text">
+              <p>Предложите платформу для учета ресурсов в комплекте с умными приборами. Оборудование и ПО NEKTA -
+                оптимальное решение: удобно заказчику, выгодно вам. Используйте NEKTA для демонстрации возможностей
+                своего оборудования.</p>
+            </div>
+          </div>
+          <div class="unites-community-box">
+            <h4>ТРАНСПОРТНЫЙ МОНИТОРИНГ</h4>
+            <div class="box-text">
+              <p>Расширяйте границы своего бизнеса, примените свой опыт в сфере Интернета вещей. Займите прогрессивную
+                нишу уже сейчас, пока остальные конкурируют на узком рынке транспортного мониторинга. Делимся своим
+                успехов в сфере Iot.</p>
+            </div>
+          </div>
+          <div class="unites-community-box">
+            <h4>РАЗРАБОТЧИКИ ПО</h4>
+            <div class="box-text">
+              <p>Добавляйте в программное обеспечение ваших клиентов функционал по сбору и обработке показаний
+                энергоучета. Используйте компоненты для разработчиков от NEKTA. Создавайте готовые Iot-решения в режиме
+                Low-code.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="unites-community__image"><img src="img/community-img1.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-community">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="why-community-wrapper bg-light-blue">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="why-community-content">
+                  <h3 class="font-700">Почему IoT-специалисты выбирают сообщество NEKTA</h3>
+                  <div class="box-text">
+                    <p>Статус партнера NEKTA - это доступ в закрытое пространство, где IoT- профессионалы из разных
+                      стран в режиме живой коммуникации делятся реальными кейсами, опытом разработок и внедрений
+                      IoT-проектов, совместно решают актуальные вопросы и следят за последними тенденциями сферы
+                      Интернета вещей.</p>
+
+                    <p>Постоянный контакт внутри сообщества NEKTA мы поддерживаем с помощью различных площадок и
+                      форматов
+                      мероприятий: чат, форум, митапы, конференции, совместное участие в выставках и т.д. позволяют нам
+                      постоянно оставаться на связи в независимости от геолокации и часовых поясов.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="why-community-image"><img src="img/community-img2.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="what-partners p-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-40">
+          <h3 class="font-700">Что получают партнеры NEKTA</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="what-partners-box">
+            <div class="what-partners-box__icon"><img src="img/what1.svg" alt=""></div>
+            <div class="what-partners-box__body">
+              <h4>Помощь в развитии бизнеса</h4>
+              <ul class="list-dots">
+                <li>Помощь в формировании и расширении клиентской базы.</li>
+                <li>Локальные заявки на внедрение NEKTA по выбранным специализациям.</li>
+                <li>Персональный менеджер для помощи в сопровождении проектов на базе NEKTA.</li>
+                <li>Специалисты по внедрению для содействия в запуске и консалтинга в плане развитии проектов NEKTA.
+                </li>
+                <li>Эксклюзивные привилегии члена сообщества NEKTA: полезные контакты, совместные проекты,
+                  профессиональная коммуникация и т.д.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="what-partners-box">
+            <div class="what-partners-box__icon"><img src="img/what2.svg" alt=""></div>
+            <div class="what-partners-box__body">
+              <h4>Маркетинговая поддержка</h4>
+              <ul class="list-dots">
+                <li>Доступ к актуальным маркетинговым материалам: презентациям, листовкам, руководствам и фирменному
+                  стилю NEKTA.
+                </li>
+                <li>Помощь с локальным продвижением по локации партнера.</li>
+                <li>Совместное участие в отраслевых конференциях и выставках.</li>
+                <li>Помощь в организации партнерских мероприятий и развитии своей сети партнеров.</li>
+                <li>Публикации по совместным проектам в СМИ, размещение кейсов и контактов на сайте NEKTA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="what-partners-box">
+            <div class="what-partners-box__icon"><img src="img/what3.svg" alt=""></div>
+            <div class="what-partners-box__body">
+              <h4>Техническая поддержка</h4>
+              <ul class="list-dots">
+                <li>Техническая поддержка и консалтинг.</li>
+                <li>Постоянные обновления системы и подробные обзоры по новому функционалу.
+                </li>
+                <li>Обучающие видео по работе в NEKTA, митапы и вебинары
+                </li>
+                <li>Совместные переговоры по согласованию технической стороны проекта с вашим заказчиком.
+                </li>
+                <li>Держим в курсе последних IoT-новостей. новинок оборудования, кейсов и разработок.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <a href="#" class="btn btn-accent max-width-none m-auto">Стать партнёром NEKTA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-community why-community-reverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="why-community-wrapper bg-light-blue">
+            <div class="row">
+              <div class="col-12 col-lg-6 order-lg-1">
+                <div class="why-community-content">
+                  <h3 class="font-700">Карта партнеров NEKTA</h3>
+                  <div class="box-text">
+                    <p>Развитие сообщества партнеров NEKTA - первостепенный приоритет для нас. Успехи каждого из
+                      партнеров складываются в общий результат и помогают стремительно развиваться всему сообществу.</p>
+
+                    <p>Мы заинтересованы помочь каждому новому партнеру начать вести свой бизнес вместе с продуктами и
+                      NEKTA, а действующим партнерам постоянно развиваться в сфере Интернета вещей.</p>
+
+                    <p>На сегодняшний день сообщество NEKTA — это объединение IoT-профессионалов, каждый из которых
+                      получает максимальную выгоду и преимущества.</p>
+                  </div>
+
+                  <a href="#" class="btn btn-accent max-width-none">СМОТРЕТЬ КАРТУ ПАРТНЕРОВ NEKTA</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="map">
+                  <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42239550.49239541!2d68.79375059847196!3d49.746608011732896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2z0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1650360839205!5m2!1sru!2sua"
+                      style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="partners p-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="partners-slider">
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner1.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner7.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner2.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner8.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner3.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner9.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner10.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner7.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner5.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner11.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner6.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner12.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="partners-slider-col">
+                <div class="partners-slider-item"><img src="img/partner1.png" alt=""></div>
+                <div class="partners-slider-item"><img src="img/partner7.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="partners-slider-nav"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-partners bg-light-blue p-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="service-partners-content">
+            <h3>Сервис для партнёров B2B NEKTA - вести бизнес в IoT просто!</h3>
+            <h4>Разработан специально для партнеров NEKTA. С этим инструментом вести свой бизнес в IoT просто и удобно.
+              Вся необходимая информация доступна онлайн, расчеты автоматизированы, наглядная и прозрачная
+              аналитика. </h4>
+            <div class="box-text">
+              <ul class="list-dots">
+                <li>Дашбор с полной статистикой по компании и дочерним учётным записям.</li>
+                <li>Администрирование компаний. Блокировка и активация компаний.</li>
+                <li>Создание и выставление/привязка тарифов клиентам и партнёрам.</li>
+                <li>Автоматический расчет оплат.</li>
+                <li>Просмотр всех логов пользователей в компании.</li>
+                <li>Настройка почтового сервера для отправки отчётов и оповещений.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="service-partners-image"><img src="img/community-img3.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-community why-community-reverse m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="why-community-wrapper bg-light-blue">
+            <div class="row">
+              <div class="col-12 col-lg-6 order-lg-1">
+                <div class="why-community-content">
+                  <h3 class="font-700">Митапы и Вебинары NEKTA</h3>
+                  <div class="box-text">
+                    <p>Регулярные митапы и вебинары позволяют всему сообществу NEKTA быть в курсе последних системных
+                      новостей, оперативно обсуждать и разбирать актуальные темы и постоянно быть на связи.</p>
+
+                    <p>Мы ценим общение с участниками нашего сообщества. Любая обратная связь и пожелания по улучшению
+                      продуктов NEKTA приветствуются.</p>
+
+                    <p>Следите за программой наших мероприятий и участвуйте в них. Также смотрите записи прошедших
+                      трансляций.</p>
+                  </div>
+
+                  <a href="#" class="btn btn-accent max-width-none">подписаться на рассылку</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="why-community-image"><img src="img/community-img4.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources-partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <h3>Ресурсы для партнеров</h3>
+          <div class="box-text">
+            <p>Для партнеров NEKTA всегда доступны все необходимые для работы ресурсы, площадки, инструменты и поддержка
+              команды разработчика.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-30">
+          <div class="resources-partners-box">
+            <div class="resources-partners-box__icon"><img src="img/resources-icon1.svg" alt=""></div>
+            <div class="resources-partners-box__body">
+              <h4>Техподдержка</h4>
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-30">
+          <div class="resources-partners-box">
+            <div class="resources-partners-box__icon"><img src="img/resources-icon2.svg" alt=""></div>
+            <div class="resources-partners-box__body">
+              <h4>Маркетинговые материалы</h4>
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-30">
+          <div class="resources-partners-box">
+            <div class="resources-partners-box__icon"><img src="img/resources-icon3.svg" alt=""></div>
+            <div class="resources-partners-box__body">
+              <h4>Библиотека</h4>
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-30">
+          <div class="resources-partners-box">
+            <div class="resources-partners-box__icon"><img src="img/resources-icon4.svg" alt=""></div>
+            <div class="resources-partners-box__body">
+              <h4>Вебинары и митапы</h4>
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-30">
+          <div class="resources-partners-box">
+            <div class="resources-partners-box__icon"><img src="img/resources-icon5.svg" alt=""></div>
+            <div class="resources-partners-box__body">
+              <h4>Справочный центр</h4>
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-30">
+          <div class="resources-partners-box">
+            <div class="resources-partners-box__icon"><img src="img/resources-icon6.svg" alt=""></div>
+            <div class="resources-partners-box__body">
+              <h4>Блог</h4>
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Отзывы партнеров</h3>
+          <div class="box-text">
+            <p>Что думают о сотрудничестве участники сообщества NEKTA?</p>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="reviews-slider">
+            <div class="slide">
+              <div class="reviews-box">
+                <div class="reviews-box__head">
+                  <div class="reviews-box-user">
+                    <div class="reviews-box-user__photo"><img src="img/photo-reviews.jpg" alt=""></div>
+                    <div class="reviews-box-user__name">
+                      <h4>Иванов Иван</h4>
+                      <div class="position">Начальник операционного маркетинга, Росатом</div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-box__logo-company"><img src="img/partner1.png" alt=""></div>
+                </div>
+                <div class="reviews-box__body">
+                  <p>Pretium lobortis gravida tincidunt tempus duis elementum mauris donec. Sed sed turpis ac sem diam.
+                    Dignissim dui vestibulum morbi mauris vel, libero. Laoreet quam purus placerat volutpat eget
+                    suspendisse sed. Leo blandit aliquet viverra adipiscing mi integer nibh aliquet. Non at vitae,
+                    ullamcorper posuere egestas senectus pellentesque id sit. Et amet ultricies diam at. Mollis eget
+                    tellus, ultricies tempus, vitae faucibus morbi. Tempus, venenatis et tortor duis vestibulum, eu
+                    sollicitudin. Ullamcorper at eu diam amet tristique facilisis massa. Nulla cursus proin lectus
+                    blandit ut. Lobortis ornare vitae a nibh nulla eu, vitae. Convallis magna sed nunc quisque erat
+                    lorem in.</p>
+
+                  <p>Nunc, lobortis morbi est cursus nullam sit nunc iaculis. Mattis ullamcorper vulputate habitant
+                    tortor. Morbi quam libero senectus augue lacus dui in. Duis enim mattis duis viverra habitant auctor
+                    enim id proin. In risus in risus integer eu ut vel convallis. At in lorem ante proin tincidunt
+                    imperdiet. Arcu tellus in ultrices bibendum. Cursus tincidunt at rutrum condimentum purus. Integer
+                    id bibendum et nibh morbi. Cras nulla felis at in id vitae. Ipsum tempus enim tellus pretium tempus.
+                    Et diam at dolor arcu cursus imperdiet. Semper velit duis feugiat venenatis et quisque integer
+                    tincidunt. Elementum vitae, volutpat sed metus luctus nunc, sit ultrices.</p>
+
+                  <p>Curabitur tincidunt elit imperdiet id in tempor. Sed mi fames nisi, amet pellentesque pellentesque
+                    auctor cras. Ac iaculis mauris et placerat sed. Eu quam sit duis tortor nulla facilisi. Placerat
+                    enim viverra ut mi imperdiet duis in donec. Urna non et ipsum vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="reviews-box">
+                <div class="reviews-box__head">
+                  <div class="reviews-box-user">
+                    <div class="reviews-box-user__photo"><img src="img/photo-reviews.jpg" alt=""></div>
+                    <div class="reviews-box-user__name">
+                      <h4>Иванов Иван</h4>
+                      <div class="position">Начальник операционного маркетинга, Росатом</div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-box__logo-company"><img src="img/partner1.png" alt=""></div>
+                </div>
+                <div class="reviews-box__body">
+                  <p>Pretium lobortis gravida tincidunt tempus duis elementum mauris donec. Sed sed turpis ac sem diam.
+                    Dignissim dui vestibulum morbi mauris vel, libero. Laoreet quam purus placerat volutpat eget
+                    suspendisse sed. Leo blandit aliquet viverra adipiscing mi integer nibh aliquet. Non at vitae,
+                    ullamcorper posuere egestas senectus pellentesque id sit. Et amet ultricies diam at. Mollis eget
+                    tellus, ultricies tempus, vitae faucibus morbi. Tempus, venenatis et tortor duis vestibulum, eu
+                    sollicitudin. Ullamcorper at eu diam amet tristique facilisis massa. Nulla cursus proin lectus
+                    blandit ut. Lobortis ornare vitae a nibh nulla eu, vitae. Convallis magna sed nunc quisque erat
+                    lorem in.</p>
+
+                  <p>Nunc, lobortis morbi est cursus nullam sit nunc iaculis. Mattis ullamcorper vulputate habitant
+                    tortor. Morbi quam libero senectus augue lacus dui in. Duis enim mattis duis viverra habitant auctor
+                    enim id proin. In risus in risus integer eu ut vel convallis. At in lorem ante proin tincidunt
+                    imperdiet. Arcu tellus in ultrices bibendum. Cursus tincidunt at rutrum condimentum purus. Integer
+                    id bibendum et nibh morbi. Cras nulla felis at in id vitae. Ipsum tempus enim tellus pretium tempus.
+                    Et diam at dolor arcu cursus imperdiet. Semper velit duis feugiat venenatis et quisque integer
+                    tincidunt. Elementum vitae, volutpat sed metus luctus nunc, sit ultrices.</p>
+
+                  <p>Curabitur tincidunt elit imperdiet id in tempor. Sed mi fames nisi, amet pellentesque pellentesque
+                    auctor cras. Ac iaculis mauris et placerat sed. Eu quam sit duis tortor nulla facilisi. Placerat
+                    enim viverra ut mi imperdiet duis in donec. Urna non et ipsum vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="reviews-box">
+                <div class="reviews-box__head">
+                  <div class="reviews-box-user">
+                    <div class="reviews-box-user__photo"><img src="img/photo-reviews.jpg" alt=""></div>
+                    <div class="reviews-box-user__name">
+                      <h4>Иванов Иван</h4>
+                      <div class="position">Начальник операционного маркетинга, Росатом</div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-box__logo-company"><img src="img/partner1.png" alt=""></div>
+                </div>
+                <div class="reviews-box__body">
+                  <p>Pretium lobortis gravida tincidunt tempus duis elementum mauris donec. Sed sed turpis ac sem diam.
+                    Dignissim dui vestibulum morbi mauris vel, libero. Laoreet quam purus placerat volutpat eget
+                    suspendisse sed. Leo blandit aliquet viverra adipiscing mi integer nibh aliquet. Non at vitae,
+                    ullamcorper posuere egestas senectus pellentesque id sit. Et amet ultricies diam at. Mollis eget
+                    tellus, ultricies tempus, vitae faucibus morbi. Tempus, venenatis et tortor duis vestibulum, eu
+                    sollicitudin. Ullamcorper at eu diam amet tristique facilisis massa. Nulla cursus proin lectus
+                    blandit ut. Lobortis ornare vitae a nibh nulla eu, vitae. Convallis magna sed nunc quisque erat
+                    lorem in.</p>
+
+                  <p>Nunc, lobortis morbi est cursus nullam sit nunc iaculis. Mattis ullamcorper vulputate habitant
+                    tortor. Morbi quam libero senectus augue lacus dui in. Duis enim mattis duis viverra habitant auctor
+                    enim id proin. In risus in risus integer eu ut vel convallis. At in lorem ante proin tincidunt
+                    imperdiet. Arcu tellus in ultrices bibendum. Cursus tincidunt at rutrum condimentum purus. Integer
+                    id bibendum et nibh morbi. Cras nulla felis at in id vitae. Ipsum tempus enim tellus pretium tempus.
+                    Et diam at dolor arcu cursus imperdiet. Semper velit duis feugiat venenatis et quisque integer
+                    tincidunt. Elementum vitae, volutpat sed metus luctus nunc, sit ultrices.</p>
+
+                  <p>Curabitur tincidunt elit imperdiet id in tempor. Sed mi fames nisi, amet pellentesque pellentesque
+                    auctor cras. Ac iaculis mauris et placerat sed. Eu quam sit duis tortor nulla facilisi. Placerat
+                    enim viverra ut mi imperdiet duis in donec. Urna non et ipsum vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="reviews-box">
+                <div class="reviews-box__head">
+                  <div class="reviews-box-user">
+                    <div class="reviews-box-user__photo"><img src="img/photo-reviews.jpg" alt=""></div>
+                    <div class="reviews-box-user__name">
+                      <h4>Иванов Иван</h4>
+                      <div class="position">Начальник операционного маркетинга, Росатом</div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-box__logo-company"><img src="img/partner1.png" alt=""></div>
+                </div>
+                <div class="reviews-box__body">
+                  <p>Pretium lobortis gravida tincidunt tempus duis elementum mauris donec. Sed sed turpis ac sem diam.
+                    Dignissim dui vestibulum morbi mauris vel, libero. Laoreet quam purus placerat volutpat eget
+                    suspendisse sed. Leo blandit aliquet viverra adipiscing mi integer nibh aliquet. Non at vitae,
+                    ullamcorper posuere egestas senectus pellentesque id sit. Et amet ultricies diam at. Mollis eget
+                    tellus, ultricies tempus, vitae faucibus morbi. Tempus, venenatis et tortor duis vestibulum, eu
+                    sollicitudin. Ullamcorper at eu diam amet tristique facilisis massa. Nulla cursus proin lectus
+                    blandit ut. Lobortis ornare vitae a nibh nulla eu, vitae. Convallis magna sed nunc quisque erat
+                    lorem in.</p>
+
+                  <p>Nunc, lobortis morbi est cursus nullam sit nunc iaculis. Mattis ullamcorper vulputate habitant
+                    tortor. Morbi quam libero senectus augue lacus dui in. Duis enim mattis duis viverra habitant auctor
+                    enim id proin. In risus in risus integer eu ut vel convallis. At in lorem ante proin tincidunt
+                    imperdiet. Arcu tellus in ultrices bibendum. Cursus tincidunt at rutrum condimentum purus. Integer
+                    id bibendum et nibh morbi. Cras nulla felis at in id vitae. Ipsum tempus enim tellus pretium tempus.
+                    Et diam at dolor arcu cursus imperdiet. Semper velit duis feugiat venenatis et quisque integer
+                    tincidunt. Elementum vitae, volutpat sed metus luctus nunc, sit ultrices.</p>
+
+                  <p>Curabitur tincidunt elit imperdiet id in tempor. Sed mi fames nisi, amet pellentesque pellentesque
+                    auctor cras. Ac iaculis mauris et placerat sed. Eu quam sit duis tortor nulla facilisi. Placerat
+                    enim viverra ut mi imperdiet duis in donec. Urna non et ipsum vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="reviews-box">
+                <div class="reviews-box__head">
+                  <div class="reviews-box-user">
+                    <div class="reviews-box-user__photo"><img src="img/photo-reviews.jpg" alt=""></div>
+                    <div class="reviews-box-user__name">
+                      <h4>Иванов Иван</h4>
+                      <div class="position">Начальник операционного маркетинга, Росатом</div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-box__logo-company"><img src="img/partner1.png" alt=""></div>
+                </div>
+                <div class="reviews-box__body">
+                  <p>Pretium lobortis gravida tincidunt tempus duis elementum mauris donec. Sed sed turpis ac sem diam.
+                    Dignissim dui vestibulum morbi mauris vel, libero. Laoreet quam purus placerat volutpat eget
+                    suspendisse sed. Leo blandit aliquet viverra adipiscing mi integer nibh aliquet. Non at vitae,
+                    ullamcorper posuere egestas senectus pellentesque id sit. Et amet ultricies diam at. Mollis eget
+                    tellus, ultricies tempus, vitae faucibus morbi. Tempus, venenatis et tortor duis vestibulum, eu
+                    sollicitudin. Ullamcorper at eu diam amet tristique facilisis massa. Nulla cursus proin lectus
+                    blandit ut. Lobortis ornare vitae a nibh nulla eu, vitae. Convallis magna sed nunc quisque erat
+                    lorem in.</p>
+
+                  <p>Nunc, lobortis morbi est cursus nullam sit nunc iaculis. Mattis ullamcorper vulputate habitant
+                    tortor. Morbi quam libero senectus augue lacus dui in. Duis enim mattis duis viverra habitant auctor
+                    enim id proin. In risus in risus integer eu ut vel convallis. At in lorem ante proin tincidunt
+                    imperdiet. Arcu tellus in ultrices bibendum. Cursus tincidunt at rutrum condimentum purus. Integer
+                    id bibendum et nibh morbi. Cras nulla felis at in id vitae. Ipsum tempus enim tellus pretium tempus.
+                    Et diam at dolor arcu cursus imperdiet. Semper velit duis feugiat venenatis et quisque integer
+                    tincidunt. Elementum vitae, volutpat sed metus luctus nunc, sit ultrices.</p>
+
+                  <p>Curabitur tincidunt elit imperdiet id in tempor. Sed mi fames nisi, amet pellentesque pellentesque
+                    auctor cras. Ac iaculis mauris et placerat sed. Eu quam sit duis tortor nulla facilisi. Placerat
+                    enim viverra ut mi imperdiet duis in donec. Urna non et ipsum vel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-slider__nav"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="innovation p-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center col-lg-8 offset-lg-2"><h3>Развивайте бизнес вместе с NEKTA и инновационными
+          решениями Интернета Вещей</h3>
+        </div>
+        <div class="col-12">
+          <div class="map-advantages">
+            <div class="map-advantages-box">
+              <div class="map-advantages-box__icon"><img src="img/map-adv-icon1.svg" alt=""></div>
+              <div class="map-advantages-box__body">
+                <h3>Станьте партнером</h3>
+                <div class="box-text">
+                  <p>Присоединяйтесь к глобальному объединению экспертов и помогайте клиентам менять бизнес с помощью
+                    «умных» решений и
+                    мощной аналитики.</p>
+                </div>
+                <a href="#" class="btn btn-accent">Оставить заявку</a>
+              </div>
+            </div>
+
+            <div class="map-advantages-box">
+              <div class="map-advantages-box__icon"><img src="img/map-adv-icon2.svg" alt=""></div>
+              <div class="map-advantages-box__body">
+                <h3>Закажите NEKTA в вашем регионе</h3>
+                <div class="box-text">
+                  <p>Получите телематическое решение, которое оптимизирует работу автопарка, сократит расходы на
+                    обслуживание и возьмет
+                    расход топлива под контроль.</p>
+                </div>
+                <a href="#" class="btn btn-accent">Искать на карте</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="footer-top">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4"><h3>Следите за обновлениями</h3></div>
+              <div class="col-12 col-lg-8">
+                <form method="post" class="form-subscribe">
+                  <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                  <label><input type="text" placeholder="Ваш E-mail" name="mail"></label>
+                  <button type="submit" class="btn btn-accent btn-lg">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-center">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                <div class="info-company">
+                  <p>Головной офис NEKTA</p>
+
+                  <div class="address">Россия, Самарская обл., г. Тольятти
+                    Ул. Юбилейная, 29, оф. 202
+                  </div>
+
+                  <a href="tel:+78482903020" class="info-company__links">+7 8482 90 30 20</a>
+                  <a href="mailto:info@nekta.tech" class="info-company__links">info@nekta.tech</a>
+
+
+                </div>
+
+                <div class="footer-box">
+                  <h3>Мы в социальных сетях</h3>
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#in"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-8 d-flex flex-wrap">
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Продукты</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">NEKTA Cloud</a></li>
+                      <li><a href="#">NEKTA Server</a></li>
+                      <li><a href="#">NEKTA Core</a></li>
+                      <li><a href="#">Приложение NEKTA</a></li>
+                      <li><a href="#">flespi</a></li>
+                      <li><a href="#">GPS-Trace</a></li>
+                      <li><a href="#">Gurtam Maps</a></li>
+                      <li><a href="#">Серверный центр</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Сообщество</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">Карта партнеров</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                      <li><a href="#">Разработчики ПО</a></li>
+                      <li><a href="#">Библиотека кейсов</a></li>
+                      <li><a href="#">Техподдержка</a></li>
+                      <li><a href="#">Обучение</a></li>
+                      <li><a href="#">Вебинары</a></li>
+                      <li><a href="#">Маркетинг</a></li>
+                      <li><a href="#">Выставки</a></li>
+                      <li><a href="#">Справочный центр</a></li>
+                      <li><a href="#">Форум</a></li>
+                      <li><a href="#">Блог</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Компания</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Команда</a></li>
+                      <li><a href="#">Карьера</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">История</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-box">
+                    <h3>Оборудование</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">GPS и ГЛОНАСС оборудование</a></li>
+                      <li><a href="#">Производители оборудования</a></li>
+                      <li><a href="#">Новости производителей</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-bottom">
+            <div class="copyright">Copyright © 2017-2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
