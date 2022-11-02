@@ -261,6 +261,81 @@ $('.reviews-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
+$('.speakers-slider').slick({
+    slidesToShow: 3,
+    dots: true,
+    appendDots: '.speakers-slider__nav',
+    appendArrows: '.speakers-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+$('.last-time-slider').slick({
+    slidesToShow: 3,
+    dots: true,
+    appendDots: '.last-time-slider__nav',
+    appendArrows: '.last-time-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+$('.history-nekta-content').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrows: false,
+    fade: true,
+    asNavFor: '.history-nekta-slider'
+});
+
+$('.history-nekta-slider').slick({
+    slidesToShow: 1,
+    asNavFor: '.history-nekta-content',
+    arrows: true,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
+$('.go_to').click(function (e) {
+    e.preventDefault();
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length !== 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});
+
+
 // показать карточку товара по наведению в зависимости от значениея data-tab
 $(document).ready(function () {
     $(".js-tab-trigger").hover(function () {

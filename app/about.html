@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nekta</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="#" class="mobile-menu-toggle">Продукты</a>
+        <div class="mobile-menu-sub">
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+          </a>
+          <a href="#" class="service-product">
+            <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+            <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Оборудование</a></li>
+      <li><a href="#" class="mobile-menu-toggle">Сообщество</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">Карта партнеров</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Разработчики ПО</a></li>
+            <li><a href="#">Библиотека кейсов</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Вебинары</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Выставки</a></li>
+            <li><a href="#">Справочный центр</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" class="mobile-menu-toggle">Компания</a>
+        <div class="mobile-menu-sub">
+          <ul class="dropdown-menu-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+    <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+    <ul class="list-language">
+      <li><a href="#" class="active">RU</a></li>
+      <li><a href="#">Eng</a></li>
+      <li>
+        <a href="#" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <header>
+    <div class="header-top">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <ul class="menu">
+              <li><a href="#" class="js-tab-trigger" data-tab="1">Продукты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="2">Сообщество</a></li>
+              <li><a href="#" class="js-tab-trigger" data-tab="3">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+
+            <ul class="list-language">
+              <li><a href="#" class="active">RU</a></li>
+              <li><a href="#">Eng</a></li>
+            </ul>
+
+            <a href="#" class="links-cabinet">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+            </a>
+
+            <a href="tel:+78007005573" class="phone">8 800 700 55 73</a>
+            <a href="#" class="btn btn-accent btn-call">Оставить заявку</a>
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="header-bottom js-tab-content" data-tab="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service1.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Cloud</span>
+                <span class="service-product__text">Облачная версия</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service2.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Server</span>
+                <span class="service-product__text">Серверное решение</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="service-product">
+              <span class="service-product__icon"><img src="img/icon-service3.svg" alt=""></span>
+              <span class="service-product__body">
+                <span class="service-product__title">NEKTA Core</span>
+                <span class="service-product__text">Back-end решение</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Карта партнеров</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Разработчики ПО</a></li>
+              <li><a href="#">Библиотека кейсов</a></li>
+              <li><a href="#">Техподдержка</a></li>
+              <li><a href="#">Обучение</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вебинары</a></li>
+              <li><a href="#">Маркетинг</a></li>
+              <li><a href="#">Выставки</a></li>
+              <li><a href="#">Справочный центр</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom js-tab-content" data-tab="3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Карьера</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-case-page home-about-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item"><a href="news.html">Новости</a></li>
+              <li class="breadcrumb-item active" aria-current="page">О нас</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-7">
+          <div class="home-content">
+            <h1>О NEKTA</h1>
+
+            <div class="home-content-box">
+              <div class="box-text">
+                <p>NEKTA - российская it-компания, разработчик программных решений в сфере Интернета вещей. Сегодня
+                  NEKTA - один из ключевых разработчиков IoT-проектов для широкого спектра отраслей промышленности и
+                  бизнеса в России и за рубежом.</p>
+                <p>Среди наших разработок целый ряд успешных решений для сферы энергетики, нефтедобычи, ритейла,
+                  транспортной сферы и т.д.</p>
+
+                <p><a href="#" class="d-inline color-accent text-decoration">Наши партнеры</a> активно внедряют продукты
+                  NEKTA по всему миру, оптимизируя тем самым бизнес-процессы,
+                  повышая рентабельность и конкурентоспособность компаний.</p>
+              </div>
+
+              <a href="#why-nekta" class="btn btn-md btn-border-accent color-accent go_to">Почему NEKTA</a>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="home-case-page__img"><img src="img/about-image.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <div class="about-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="about-info-row">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3 mb-30">
+                <div class="about-info-box">
+                  <h3>6 лет разработки </h3>
+                  <div class="box-text">
+                    <p>Накопленный опыт <br>разработки и внедрения <br>IoT-решений</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 mb-30">
+                <div class="about-info-box">
+                  <h3>4 продукта</h3>
+                  <div class="box-text">
+                    <p>Ключевые продукты: Облачная и Серверная версии платформы, Личный кабинет потребителя, Сервис для
+                      партнеров.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 mb-30">
+                <div class="about-info-box">
+                  <h3>2 офиса</h3>
+                  <div class="box-text">
+                    <p>Россия, ОАЭ. Сеть <br>партнеров по всему миру.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 mb-30">
+                <div class="about-info-box">
+                  <h3>5 стран</h3>
+                  <div class="box-text">
+                    <p>Россия, СНГ, Европа, Азия.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="category-service m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Экосистема продуктов NEKTA</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="category-service-box">
+            <div class="category-service-box__head">
+              <div class="category-service-box__icon"><img src="img/icon-service1.svg" alt=""></div>
+              <div class="category-service-box__name">
+                <h4>NEKTA Cloud</h4>
+                <p>Облачная версия</p>
+              </div>
+            </div>
+
+            <div class="category-service-box__body">
+              <ul class="list-dots">
+                <li>оплата только за подключенные устройства
+                </li>
+                <li>быстрый старт работы с минимальными настройками</li>
+                <li>доступ с любого устройства, подключенного к сети Интернет</li>
+                <li>избавит от затрат на приобретение
+                  и администрирование собственных серверных ресурсов
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-service-box__footer">
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="category-service-box">
+            <div class="category-service-box__head">
+              <div class="category-service-box__icon"><img src="img/icon-service2.svg" alt=""></div>
+              <div class="category-service-box__name">
+                <h4>NEKTA Server</h4>
+                <p>Серверное решение</p>
+              </div>
+            </div>
+
+            <div class="category-service-box__body">
+              <ul class="list-dots">
+                <li>максимально адаптивные настройки</li>
+                <li>размещение на собственном сервере</li>
+                <li>хранение и обработка информации
+                  в локальной сети
+                </li>
+                <li>соблюдение политики конфиденциальности данных</li>
+              </ul>
+            </div>
+
+            <div class="category-service-box__footer">
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="category-service-box">
+            <div class="category-service-box__head">
+              <div class="category-service-box__icon"><img src="img/icon-service3.svg" alt=""></div>
+              <div class="category-service-box__name">
+                <h4>NEKTA Core</h4>
+                <p>Back-end решение </p>
+              </div>
+            </div>
+
+            <div class="category-service-box__body">
+              <ul class="list-dots">
+                <li>готовый компонент для разработчиков и it-компаний</li>
+                <li>преимущества и универсальность NEKTA в интерфейсе собственного ПО</li>
+                <li>обмен данными с внешними и внутренними информационными сервисами</li>
+                <li>высокая безопасность и мгновенный доступ к данным</li>
+              </ul>
+            </div>
+
+            <div class="category-service-box__footer">
+              <a href="#" class="links-next">
+                <span class="links-next__text">подробнее</span>
+                <span class="links-next__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-values bg-light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Наши ценности</h2>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="box-text">
+            <p>В основе успеха компании лежат четыре ключевых ценности, которые помогают нам шаг за шагом уверенно
+              двигаться к успеху</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="our-values-box">
+            <div class="our-values-box__icon"><img src="img/our-values-icon1.svg" alt=""></div>
+            <div class="our-values-box__text">
+              <h4>Созидание</h4>
+              <p>Создаём новое, учитывая актуальные потребности современного мира</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="our-values-box">
+            <div class="our-values-box__icon"><img src="img/our-values-icon2.svg" alt=""></div>
+            <div class="our-values-box__text">
+              <h4>Партнёрство</h4>
+              <p>Строим партнёрские отношения так, чтобы вместе развиваться и добиваться поставленных целей</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="our-values-box">
+            <div class="our-values-box__icon"><img src="img/our-values-icon3.svg" alt=""></div>
+            <div class="our-values-box__text">
+              <h4>Гибкость</h4>
+              <p>Следим за развитием современных технологий, осваиваем их и применяем в своих разработках</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="our-values-box">
+            <div class="our-values-box__icon"><img src="img/our-values-icon4.svg" alt=""></div>
+            <div class="our-values-box__text">
+              <h4>Открытость</h4>
+              <p>Мы постоянно учимся и готовы делиться своим опытом и идеями</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-nekta m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Наша история</h2>
+
+          <div class="history-nekta-content">
+            <div class="slide">
+              <div class="box-text">
+                <p>История NEKTA началась еще в 2017 году с идеи создания программного решения для реализации передовых
+                  проектов сферы Интернета вещей. Оглядываясь назад, мы понимаем, что первые шаги стали началом
+                  непростого и вместе с тем интересного пути к статусу лидера рынка IoT-разработки.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="box-text">
+                <p>История NEKTA началась еще в 2017 году с идеи создания программного решения для реализации передовых
+                  проектов сферы Интернета вещей. Оглядываясь назад, мы понимаем, что первые шаги стали началом
+                  непростого и вместе с тем интересного пути к статусу лидера рынка IoT-разработки.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="box-text">
+                <p>История NEKTA началась еще в 2017 году с идеи создания программного решения для реализации передовых
+                  проектов сферы Интернета вещей. Оглядываясь назад, мы понимаем, что первые шаги стали началом
+                  непростого и вместе с тем интересного пути к статусу лидера рынка IoT-разработки.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-md color-accent btn-border-accent">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="history-nekta-slider">
+            <div class="slide">
+              <div class="history-nekta-item">
+                <div class="date">2017</div>
+                <div class="history-nekta-item__title">Основание компании</div>
+                <div class="box-text">
+                  <p>Основная идея — разработка комплексного IoT решения основанного на современном протоколе передачи
+                    данных LoRaWAN.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="history-nekta-item">
+                <div class="date">2017</div>
+                <div class="history-nekta-item__title">Основание компании</div>
+                <div class="box-text">
+                  <p>Основная идея — разработка комплексного IoT решения основанного на современном протоколе передачи
+                    данных LoRaWAN.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="history-nekta-item">
+                <div class="date">2017</div>
+                <div class="history-nekta-item__title">Основание компании</div>
+                <div class="box-text">
+                  <p>Основная идея — разработка комплексного IoT решения основанного на современном протоколе передачи
+                    данных LoRaWAN.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-nekta p-80 bg-light-blue" id="why-nekta">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Почему NEKTA?</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="why-nekta-box">
+            <h4>Мы разрабатываем</h4>
+            <div class="box-text">
+              <p>Наш флагманский продукт – система интеллектуального учёта энергоресурсов NEKTA. Также мы создаем различные отраслевые решения сферы Интернета вещей на базе платформы NEKTA для решения частных задач.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="why-nekta-box">
+            <h4>Мы ищем единомышленников</h4>
+            <div class="box-text">
+              <p>Мы приглашаем в нашу команду только профессионалов и создаем все условия для максимального раскрытия их потенциала. Команда экспертов - ключевой ресурс, который помогает компании расти и развиваться.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="why-nekta-box">
+            <h4>Мы выводим Iot-решения на новый уровень</h4>
+            <div class="box-text">
+              <p>Мы постоянно дорабатываем и улучшаем наши продукты, чтобы работа в NEKTA была еще более эффективной и удобной. Все пользователи получают экспертную техподдержку на всех этапах работы с системой.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="why-nekta-box">
+            <h4>Мы добавляем новые устройства</h4>
+            <div class="box-text">
+              <p>Мы регулярно интегрируем в NEKTA новые протоколы устройств, постоянно расширяя перечень поддерживаемых приборов. Мы делаем все, чтобы наши клиенты и партнёры могли работать с любыми приборами, которые есть на рынке.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="why-nekta-box">
+            <h4>Мы в центре событий</h4>
+            <div class="box-text">
+              <p>Мы постоянно взаимодействуем с партнёрами и клиентами, получаем обратную связь и обмениваемся опытом. Мы объединяем российское сообщество Интернета вещей, участвуем в ведущих IoT/IIoT-мероприятиях и организуем их сами.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="why-nekta-box">
+            <h4>Мы развиваем сеть партнеров</h4>
+            <div class="box-text">
+              <p>Постоянное развитие партнерской сети - приоритетное направление развития нашей компании. Перспективная тема и востребованный продукт NEKTA в комплексе с нашей поддержкой - идеальный старт для начала и развития бизнеса в сфере IoT.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="why-nekta-footer">
+            <h3>Мы следим за всеми последними тенденциями отрасли, лучшие технологии внедряем в наши продукты.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-nekta m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Наша команда</h2>
+          <div class="box-text">
+            <p>Команда IoT-разработчиков, преданных своему делу. Нас объединяет профессионализм, экспертный опыт и знания, которые мы воплощаем в своих продуктах. Наращивая мощь в плане развития и продвижения своих решений, мы приглашаем в свою команду талантливых специалистов. Мы создаем лучшие условия для роста каждого сотрудника и понимаем, что именно из этого складывается успех всей компании.</p>
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="btn btn-md btn-accent">ПОДРОБНЕЕ О КОМАНДЕ</a>
+            <a href="#" class="btn btn-md btn-border-accent color-accent">КАРЬЕРА В NEKTA</a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-lg-6">
+          <div class="team-nekta__image"><img src="img/team-image.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="social-nekta">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="share share-news">
+            <h2>NEKTA в социальных сетях</h2>
+            <ul class="list-social">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a></li>
+
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a></li>
+
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a></li>
+
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="subscribe-news">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6">
+                <div class="subscribe-news__content">
+                  <h3>Подпишитесь на новости</h3>
+                  <div class="box-text">
+                    <p>Будьте в курсе последних новостей разработки, кейсов наших партнеров и интеграции оборудования.
+                      Все самое интересное в нашей рассылке раз в месяц.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <form method="post" class="subscribe-news__form">
+                  <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                  <label><input type="text" placeholder="Email" name="mail"></label>
+                  <button type="submit" class="btn btn-accent">Подписаться на рассылку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="footer-top">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4"><h3>Следите за обновлениями</h3></div>
+              <div class="col-12 col-lg-8">
+                <form method="post" class="form-subscribe">
+                  <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                  <label><input type="text" placeholder="Ваш E-mail" name="mail"></label>
+                  <button type="submit" class="btn btn-accent btn-lg">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-center">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                <div class="info-company">
+                  <p>Головной офис NEKTA</p>
+
+                  <div class="address">Россия, Самарская обл., г. Тольятти
+                    Ул. Юбилейная, 29, оф. 202
+                  </div>
+
+                  <a href="tel:+78482903020" class="info-company__links">+7 8482 90 30 20</a>
+                  <a href="mailto:info@nekta.tech" class="info-company__links">info@nekta.tech</a>
+
+
+                </div>
+
+                <div class="footer-box">
+                  <h3>Мы в социальных сетях</h3>
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#in"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-8 d-flex flex-wrap">
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Продукты</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">NEKTA Cloud</a></li>
+                      <li><a href="#">NEKTA Server</a></li>
+                      <li><a href="#">NEKTA Core</a></li>
+                      <li><a href="#">Приложение NEKTA</a></li>
+                      <li><a href="#">flespi</a></li>
+                      <li><a href="#">GPS-Trace</a></li>
+                      <li><a href="#">Gurtam Maps</a></li>
+                      <li><a href="#">Серверный центр</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Сообщество</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">Карта партнеров</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                      <li><a href="#">Разработчики ПО</a></li>
+                      <li><a href="#">Библиотека кейсов</a></li>
+                      <li><a href="#">Техподдержка</a></li>
+                      <li><a href="#">Обучение</a></li>
+                      <li><a href="#">Вебинары</a></li>
+                      <li><a href="#">Маркетинг</a></li>
+                      <li><a href="#">Выставки</a></li>
+                      <li><a href="#">Справочный центр</a></li>
+                      <li><a href="#">Форум</a></li>
+                      <li><a href="#">Блог</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-col">
+                  <div class="footer-box">
+                    <h3>Компания</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Команда</a></li>
+                      <li><a href="#">Карьера</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">История</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-box">
+                    <h3>Оборудование</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">GPS и ГЛОНАСС оборудование</a></li>
+                      <li><a href="#">Производители оборудования</a></li>
+                      <li><a href="#">Новости производителей</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-bottom">
+            <div class="copyright">Copyright © 2017-2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
