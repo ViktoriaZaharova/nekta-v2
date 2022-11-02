@@ -307,6 +307,29 @@ $('.last-time-slider').slick({
     ]
 });
 
+$('.ecosystem-slider').slick({
+    slidesToShow: 3,
+    dots: true,
+    appendDots: '.ecosystem-slider__nav',
+    appendArrows: '.ecosystem-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
 $('.history-nekta-content').slick({
     slidesToShow: 1,
     dots: false,
@@ -353,6 +376,16 @@ $(document).ready(function () {
 
 $(document).mouseout(function (e) { // событие клика по веб-документу
     var div = $("header"); // тут указываем ID элемента
+    if (!div.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.removeClass('hover'); // скрываем его
+        $('.js-tab-content').removeClass('active');
+        $('.js-tab-trigger').removeClass('active');
+    }
+});
+
+$(document).mouseout(function (e) { // событие клика по веб-документу
+    var div = $(".js-tab-trigger.active"); // тут указываем ID элемента
+    var box = $('.js-tab-content.active');
     if (!div.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
         div.removeClass('hover'); // скрываем его
         $('.js-tab-content').removeClass('active');

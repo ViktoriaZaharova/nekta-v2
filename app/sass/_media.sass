@@ -177,6 +177,45 @@
     min-width: auto
     float: none
 
+  .home-about-page
+    .home-case-page__img
+      min-width: 550px
+
+  .home-events-page .year, .home-events-page h1
+    font-size: 180px
+
+  .home-events-page .home-content
+    padding: 0
+    margin: 50px 0
+
+  .m-120
+    margin: 70px 0
+
+  .about-conference h2
+    margin: 0 0 30px
+
+  .about-conference-box
+    margin: 0 0 40px
+    &__number
+      font-size: 70px
+      line-height: 1
+    &__text
+      margin: 0
+      span
+        line-height: 1
+        font-size: 40px
+
+  .members h2
+    margin: 0 0 50px
+
+  .atmosphere h2, .atmosphere .year
+    font-size: 200px
+    line-height: 1
+
+  .atmosphere .subtitle
+    font-size: 100px
+
+
 @media only screen and (max-width: 992px)
   .home-img
     min-width: auto
@@ -510,6 +549,125 @@
   .reviews-slider__nav
     margin: 30px auto 0
 
+  .home-about-page
+    .home-case-page__img
+      min-width: auto
+      margin: 20px auto 0
+      max-width: 400px
+
+  .about-info
+    margin: 50px 0 0
+
+  .m-100
+    margin: 60px 0
+
+  .our-values-box
+    padding: 20px 0 0
+    margin: 20px 0 0
+    p
+      max-width: none
+
+  .our-values
+    padding: 60px 0
+    .box-text
+      max-width: none
+
+  .history-nekta-content
+    .box-text
+      max-width: none
+      font-size: 16px
+
+  .history-nekta
+    .btn
+      margin: 20px auto 0
+
+  .history-nekta-slider
+    margin: 30px auto 0
+
+  .history-nekta-item .date
+    font-size: 40px
+
+  .why-nekta-box
+    padding: 20px 0 0 40px
+    margin: 0 0 30px
+    &:before
+      top: 18px
+    .box-text
+      max-width: none
+
+  .team-nekta
+    .box-text
+      max-width: none
+    &__image
+      margin: 20px auto 0
+    .btn-group
+      justify-content: center
+
+  .social-nekta .subscribe-news
+    margin: 60px 0
+
+  .social-nekta
+    .share
+      padding: 30px 0
+    h2
+      margin: 0 auto 20px
+
+  .home-events-page .year, .home-events-page h1
+    font-size: 100px
+
+  .about-conference__content
+    margin: 20px auto 0
+    max-width: none
+    h3
+      margin: 30px auto 0
+      font-size: 24px
+
+  .members h2
+    margin: 0 0 30px
+
+  .members-box
+    margin: 0 0 30px
+    &__text
+      margin: 20px 0 0
+
+  .information-events-box
+    padding: 20px 0
+
+  .information-events
+    .row
+      margin-top: 30px
+
+  .atmosphere h2, .atmosphere .year
+    font-size: 140px
+
+  .atmosphere
+    padding: 60px 0
+    .subtitle
+      font-size: 70px
+
+  .atmosphere-wrapper ul
+    font-size: 16px
+
+  .atmosphere .year
+    margin: 0 20px 0 0
+
+  .program-conference
+    .row
+      margin-top: 20px
+    h2
+      margin: 0 0 30px
+
+  .organizer
+    margin: 0
+    .title
+      font-size: 180px
+
+  .organizer .box-text
+    max-width: none
+
+  .organizer-text h3
+    font-size: 22px
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 768px)
   header
@@ -688,7 +846,88 @@
     p
       margin: 0 0 20px
 
+  .ecosystem-slider
+    .category-service-box
+      height: 100%
+      margin: 0
 
+  .why-nekta-footer
+    padding: 20px 0 0
+
+  .social-nekta .list-social li
+    margin: 0 10px 0 0
+    a
+      width: 38px
+      height: 38px
+      padding: 9px
+
+  .home-events-page .year, .home-events-page h1
+    font-size: 80px
+
+  .home-case-page-wrapper
+    flex-direction: column-reverse
+
+  .home-case-page__info
+    max-width: none
+    margin: 0
+    width: 100%
+
+  .home-events-page h1
+    text-align: center
+
+  .home-events-page .year
+    margin: 0 auto 10px
+
+  .about-conference-box
+    justify-content: flex-start
+    &__text
+      max-width: none
+
+  .atmosphere-wrapper
+    flex-direction: column
+    ul
+      width: 100%
+
+  .atmosphere .year
+    margin: 0
+
+  .atmosphere h2, .atmosphere .year
+    text-align: center
+    width: 100%
+    font-size: 100px
+
+  .atmosphere .subtitle
+    line-height: 1
+    margin: 0 auto
+    text-align: center
+    font-size: 60px
+
+  .atmosphere-footer
+    flex-wrap: wrap
+    .box-text
+      max-width: none
+      width: 100%
+      margin: 0 0 20px
+    .btn
+      margin: 0 auto
+
+  .atmosphere .year
+    margin: 0 auto 10px
+
+  .program-conference .information-events-wrapper .row .information-events-box
+    flex-wrap: wrap
+    .information-events-box__text
+      max-width: none
+
+  .author-box
+    width: 100%
+    margin: 10px 0 0
+    max-width: none
+
+  .organizer
+    padding: 60px 0
+    .title
+      font-size: 120px
 
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
@@ -810,6 +1049,21 @@
   .reviews-box__head
     flex-wrap: wrap
 
+  .about-info-box .box-text
+    max-width: none
+
+  .history-nekta-slider
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .information-events-box
+    flex-wrap: wrap
+    .btn
+      max-width: none
+      margin: 10px 0 0
+
 @media only screen and (max-width: 480px)
   header
     .list-language, .links-cabinet
@@ -855,6 +1109,28 @@
 
   .product-gallery__item
     height: 250px
+
+  .home-events-page .year, .home-events-page h1
+    font-size: 50px
+
+  .m-120
+    margin: 60px 0
+
+
+  .about-conference-box__number
+    font-size: 50px
+
+  .about-conference-box__text span
+    font-size: 30px
+
+  .atmosphere h2, .atmosphere .year
+    font-size: 70px
+
+  .atmosphere .subtitle
+    font-size: 40px
+
+  .organizer .title
+    font-size: 70px
 
 @media only screen and (max-width: 420px)
   header .phone
