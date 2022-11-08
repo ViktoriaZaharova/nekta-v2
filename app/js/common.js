@@ -347,6 +347,50 @@ $('.history-nekta-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 });
 
+$('.history-company-section').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    infinite: false,
+    asNavFor: '.history-company-nav'
+});
+
+$('.history-company-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    vertical: true,
+    infinite: false,
+    verticalSwiping: true,
+    adaptiveHeight: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '0',
+    asNavFor: '.history-company-section',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+                centerMode: false,
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+                centerMode: false,
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
+
+
 $('.go_to').click(function (e) {
     e.preventDefault();
     var scroll_el = $(this).attr('href');
