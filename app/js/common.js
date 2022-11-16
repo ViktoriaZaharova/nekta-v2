@@ -347,13 +347,13 @@ $('.history-nekta-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 });
 
-$('.history-company-section').slick({
-    slidesToShow: 1,
-    arrows: false,
-    fade: true,
-    infinite: false,
-    asNavFor: '.history-company-nav'
-});
+// $('.history-company-section').slick({
+//     slidesToShow: 1,
+//     arrows: false,
+//     fade: true,
+//     infinite: false,
+//     asNavFor: '.history-company-nav'
+// });
 
 $('.history-company-nav').slick({
     slidesToShow: 5,
@@ -365,7 +365,6 @@ $('.history-company-nav').slick({
     focusOnSelect: true,
     centerMode: true,
     centerPadding: '0',
-    asNavFor: '.history-company-section',
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     responsive: [
@@ -390,6 +389,61 @@ $('.history-company-nav').slick({
     ]
 });
 
+// $('body').scrollspy({target: '#navbar-example'});
+
+$(function () {
+    var link = $(".history-company-nav__item");
+
+    //   upper label id
+    var id = $(this).attr("href");
+
+    // Move to specific section when click on menu link
+    link.on("click", function (e) {
+        var target = $($(this).attr("href"));
+        $("html, body").animate(
+            {
+                scrollTop: target.offset().top
+            },
+            600
+        );
+
+        //     upper label remove class
+        $(".history-company-nav__item").removeClass("active");
+
+        $(this).addClass("active");
+        //    label add
+        $("." + id).addClass("active");
+
+        e.preventDefault();
+    });
+
+    // Run the scrNav when scroll
+    $(window).on("scroll", function () {
+        scrNav();
+    });
+
+    // scrNav function
+    // Change active dot according to the active section in the window
+    function scrNav() {
+        var sTop = $(window).scrollTop();
+        $(".history-company-section").each(function () {
+            var id = $(this).attr("id"),
+                offset = $(this).offset().top - 1,
+                height = $(this).height();
+            if (sTop >= offset && sTop < offset + height) {
+                link.removeClass("active");
+                $("#navbar-example")
+                    .find('[data-scroll="' + id + '"]')
+                    .addClass("active");
+            }
+        });
+    }
+    scrNav();
+});
+
+
+
+
 
 $('.go_to').click(function (e) {
     e.preventDefault();
@@ -401,6 +455,25 @@ $('.go_to').click(function (e) {
     }
     return false;
 });
+
+// $(document).ready(function () { //плавный скролл
+//     $(".go_to-scroll").on("click", function (event) {
+//         //отменяем стандартную обработку нажатия по ссылке
+//         event.preventDefault();
+//
+//         //забираем идентификатор бока с атрибута href
+//         var id = $(this).attr('href'),
+//
+//             //узнаем высоту от начала страницы до блока на который ссылается якорь
+//             top = $(id).offset().top,
+//             header = $('header').height();
+//
+//         //анимируем переход на расстояние - top за 500 мс
+//         $('body,html').animate({scrollTop: top - header - 10}, 500);
+//         // $(".go_to-scroll").removeClass('active');
+//         // $(this).addClass('active');
+//     });
+// });
 
 
 // показать карточку товара по наведению в зависимости от значениея data-tab
@@ -429,7 +502,6 @@ $(document).mouseout(function (e) { // событие клика по веб-д�
 
 $(document).mouseout(function (e) { // событие клика по веб-документу
     var div = $(".js-tab-trigger.active"); // тут указываем ID элемента
-    var box = $('.js-tab-content.active');
     if (!div.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
         div.removeClass('hover'); // скрываем его
         $('.js-tab-content').removeClass('active');
@@ -591,3 +663,4 @@ $('.btn-filter').on('click', function (e) {
 $('.btn-close-sidebar').on('click', function () {
     $('.equipment-sidebar').fadeOut();
 });
+

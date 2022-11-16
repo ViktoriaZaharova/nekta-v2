@@ -54,8 +54,7 @@ body
   background: #fff
   color: #212121
 
-html, body
-  overflow-x: hidden
+//history-company-section
 
 img
   display: block
@@ -4515,27 +4514,21 @@ strong
   margin: 100px 0
 
 .history-company-nav
-  position: absolute
+  position: sticky
+  top: 70px
+  right: 0
+  margin: 0 0 0 auto
   width: fit-content
   max-width: 80px
   z-index: 3
   padding: 50px 0 0
   //right: 360px
-  right: 0
-  top: 50%
-  transform: translate(0,-50%)
+  //right: 0
+  //top: 50%
+  //transform: translate(0,-50%)
   font-size: 18px
   font-weight: 500
   color: #888888
-  .slick-current
-    .history-company-nav__item
-      color: #212121
-      .dots-item
-        border: 1px solid #CF5555
-        &:before
-          width: 12px
-          height: 12px
-
   &__item
     padding: 0 22px 75px 0
     position: relative
@@ -4551,6 +4544,15 @@ strong
       top: 17px
       height: 80px
       width: 1px
+    &.active
+      color: #212121
+      .dots-item
+        border: 1px solid #CF5555
+        &:before
+          width: 12px
+          height: 12px
+    &:hover
+      color: #888888
   .slick-arrow
     fill: #CF5555
     width: 40px
@@ -4590,6 +4592,7 @@ strong
     transition: .3s ease
 
 .history-company-section
+  margin: 0 0 100px
   &__img
     display: flex
     align-items: center
@@ -4621,5 +4624,6 @@ strong
   h3
     margin-left: auto
     max-width: 570px
+
 
 @import "media"

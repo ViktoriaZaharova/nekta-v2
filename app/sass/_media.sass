@@ -678,6 +678,8 @@
     padding: 0 20px 0 0
     max-width: 100px
 
+
+
   .history-company-section
     .box-text
       max-width: none
@@ -959,23 +961,29 @@
       font-size: 120px
 
   .history-company-nav
-    padding: 0
+    padding: 0 24px
     max-width: 100%
     width: 100%
     position: relative
-
-  .history-company-nav
     margin: 30px auto 0
     display: flex
     align-items: center
+    top: 0
+
     .slick-arrow
       width: 20px
       min-width: 20px
       height: 40px
       margin: 0
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
       svg
         transform: none
-
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
     &__item
       padding: 0 20px 30px 0
       &:before

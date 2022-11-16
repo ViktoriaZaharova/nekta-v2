@@ -49,9 +49,6 @@ body {
   background: #fff;
   color: #212121; }
 
-html, body {
-  overflow-x: hidden; }
-
 img {
   display: block;
   max-width: 100%;
@@ -4715,27 +4712,19 @@ strong {
   margin: 100px 0; }
 
 .history-company-nav {
-  position: absolute;
+  position: sticky;
+  top: 70px;
+  right: 0;
+  margin: 0 0 0 auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 80px;
   z-index: 3;
   padding: 50px 0 0;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
   font-size: 18px;
   font-weight: 500;
   color: #888888; }
-  .history-company-nav .slick-current .history-company-nav__item {
-    color: #212121; }
-    .history-company-nav .slick-current .history-company-nav__item .dots-item {
-      border: 1px solid #CF5555; }
-      .history-company-nav .slick-current .history-company-nav__item .dots-item:before {
-        width: 12px;
-        height: 12px; }
   .history-company-nav__item {
     padding: 0 22px 75px 0;
     position: relative;
@@ -4752,6 +4741,15 @@ strong {
       top: 17px;
       height: 80px;
       width: 1px; }
+    .history-company-nav__item.active {
+      color: #212121; }
+      .history-company-nav__item.active .dots-item {
+        border: 1px solid #CF5555; }
+        .history-company-nav__item.active .dots-item:before {
+          width: 12px;
+          height: 12px; }
+    .history-company-nav__item:hover {
+      color: #888888; }
   .history-company-nav .slick-arrow {
     fill: #CF5555;
     width: 40px;
@@ -4799,42 +4797,40 @@ strong {
     -webkit-transition: .3s ease;
     transition: .3s ease; }
 
-.history-company-section__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 380px; }
-
-.history-company-section__head {
-  margin: 0 0 40px; }
-  .history-company-section__head h3 {
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 51px;
-    position: relative;
-    z-index: 1; }
-
-.history-company-section .box-text {
-  line-height: 130%;
-  font-size: 16px;
-  max-width: 410px; }
-
-.history-company-section:last-child {
-  margin: 0; }
-
-.history-company-section .year {
-  font-size: 240px;
-  font-weight: 900;
-  line-height: 100%;
-  margin: 0 0 -73px;
-  color: #fff;
-  text-shadow: #cf5555 1px 0px 0px, #cf5555 0.5403px 0.84147px 0px, #cf5555 -0.41615px 0.9093px 0px, #cf5555 -0.98999px 0.14112px 0px, #cf5555 -0.65364px -0.7568px 0px, #cf5555 0.28366px -0.95892px 0px, #cf5555 0.96017px -0.27942px 0px; }
+.history-company-section {
+  margin: 0 0 100px; }
+  .history-company-section__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 380px; }
+  .history-company-section__head {
+    margin: 0 0 40px; }
+    .history-company-section__head h3 {
+      font-size: 42px;
+      font-weight: bold;
+      line-height: 51px;
+      position: relative;
+      z-index: 1; }
+  .history-company-section .box-text {
+    line-height: 130%;
+    font-size: 16px;
+    max-width: 410px; }
+  .history-company-section:last-child {
+    margin: 0; }
+  .history-company-section .year {
+    font-size: 240px;
+    font-weight: 900;
+    line-height: 100%;
+    margin: 0 0 -73px;
+    color: #fff;
+    text-shadow: #cf5555 1px 0px 0px, #cf5555 0.5403px 0.84147px 0px, #cf5555 -0.41615px 0.9093px 0px, #cf5555 -0.98999px 0.14112px 0px, #cf5555 -0.65364px -0.7568px 0px, #cf5555 0.28366px -0.95892px 0px, #cf5555 0.96017px -0.27942px 0px; }
 
 .box-float-right h3 {
   margin-left: auto;
@@ -5571,26 +5567,34 @@ strong {
     .organizer .title {
       font-size: 120px; }
   .history-company-nav {
-    padding: 0;
+    padding: 0 24px;
     max-width: 100%;
     width: 100%;
-    position: relative; }
-  .history-company-nav {
+    position: relative;
     margin: 30px auto 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    top: 0; }
     .history-company-nav .slick-arrow {
       width: 20px;
       min-width: 20px;
       height: 40px;
-      margin: 0; }
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
       .history-company-nav .slick-arrow svg {
         -webkit-transform: none;
                 transform: none; }
+    .history-company-nav .slick-prev {
+      left: 0; }
+    .history-company-nav .slick-next {
+      right: 0; }
     .history-company-nav__item {
       padding: 0 20px 30px 0; }
       .history-company-nav__item:before {
