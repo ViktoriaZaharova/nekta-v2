@@ -457,6 +457,75 @@ strong
   h1
     margin: 20px 0 30px
 
+.home-v2
+  background: url('../img/home-bg2.jpg') no-repeat center
+    size: cover
+  position: relative
+  padding: 106px 0 140px 0
+  z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: #2F4050
+    opacity: .8
+    z-index: -1
+
+  .home-content
+    font-size: 16px
+    position: relative
+    z-index: 1
+
+    .btn-group
+      margin: 98px 0 0
+
+      .btn
+        margin: 0 20px 0 0
+
+    .btn
+      max-width: 180px
+
+  h1
+    text-transform: uppercase
+    text-align: right
+    margin: 0 0 140px auto
+    max-width: 665px
+    font-size: 46px
+    font-weight: 900
+
+  .box-text
+    max-width: 380px
+    text-align: right
+    font-weight: normal
+
+  .text-overlay
+    text-transform: uppercase
+    opacity: .15
+    color: rgba(255, 255, 255, 0.5)
+    font-size: 300px
+    line-height: 100%
+    font-weight: 900
+    width: 100%
+    min-width: 1467px
+    position: absolute
+    z-index: -1
+    top: -96px
+    left: 43%
+    transform: translate(-50%, 0)
+
+    p
+      font-size: 300px
+      font-weight: 900
+      margin: 0 0 9px
+
+      &:last-child
+        margin: 0
+        text-align: right
+
 .home_scs
   background: #2F4050
   position: relative
@@ -632,9 +701,9 @@ strong
 
 .advantages-box
   text-align: center
-  padding: 50px 50px
+  padding: 70px 20px
   font-weight: 500
-  width: 25.0%
+  width: 25%
   display: -webkit-box
   display: -ms-flexbox
   display: flex
@@ -654,6 +723,10 @@ strong
     font-size: 42px
     font-weight: bold
     color: #CF5555
+
+    span
+      font-size: 18px
+      font-weight: 500
 
   &:last-child
     margin-right: 0
@@ -4459,8 +4532,10 @@ strong
 .home-history-page
   .home-content
     margin: 100px 0 40px
+
   &__img
     min-width: 960px
+
   .box-text
     max-width: 421px
     font-weight: normal
@@ -4476,6 +4551,7 @@ strong
   letter-spacing: 0.05em
   margin: 107px 0 0
   padding: 53px 0 0 26px
+
   &:before
     content: ''
     position: absolute
@@ -4485,6 +4561,7 @@ strong
       radius: 50%
     left: 0
     bottom: 0
+
   &:after
     content: ''
     position: absolute
@@ -4494,6 +4571,7 @@ strong
     background: #CF5555
     left: 4px
     bottom: 4px
+
   &__icon
     display: flex
     align-items: center
@@ -4504,6 +4582,7 @@ strong
     position: absolute
     top: 0
     left: 4px
+
   &:hover
     color: $accent
 
@@ -4529,6 +4608,7 @@ strong
   font-size: 18px
   font-weight: 500
   color: #888888
+
   &__item
     padding: 0 22px 75px 0
     position: relative
@@ -4536,6 +4616,7 @@ strong
     transition: .3s ease
     color: #888888
     width: 100%
+
     &:before
       content: ''
       position: absolute
@@ -4544,25 +4625,34 @@ strong
       top: 17px
       height: 80px
       width: 1px
+
     &.active
       color: #212121
+
       .dots-item
         border: 1px solid #CF5555
+
         &:before
           width: 12px
           height: 12px
+
     &:hover
       color: #888888
+
   .slick-arrow
     fill: #CF5555
     width: 40px
     height: 11px
+
     svg
       transform: rotate(90deg)
+
   .slick-next
     margin: 0 -7px 0 auto
+
   .slick-prev
     margin: 0 -7px 0 auto
+
   .slick-disabled
     opacity: 0
 
@@ -4579,12 +4669,13 @@ strong
   justify-content: center
   position: absolute
   transition: .3s ease
+
   &:before
     content: ''
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 8px
     height: 8px
     background: #CF5555
@@ -4593,25 +4684,31 @@ strong
 
 .history-company-section
   margin: 0 0 100px
+
   &__img
     display: flex
     align-items: center
     justify-content: center
     max-width: 380px
+
   &__head
     margin: 0 0 40px
+
     h3
       font-size: 42px
       font-weight: bold
       line-height: 51px
       position: relative
       z-index: 1
+
   .box-text
     line-height: 130%
     font-size: 16px
     max-width: 410px
+
   &:last-child
     margin: 0
+
   .year
     font-size: 240px
     font-weight: 900
@@ -4625,5 +4722,225 @@ strong
     margin-left: auto
     max-width: 570px
 
+
+.iot-platform-wrapper
+  text-align: center
+  color: #fff
+  width: 100%
+  background: #2F4050 url('../img/iot-bg.svg') no-repeat center
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 100px 0
+
+  h2
+    text-transform: uppercase
+    font-size: 40px
+    font-weight: 800
+
+  h3
+    margin: 0 auto 40px
+    font-size: 32px
+    font-weight: bold
+    max-width: 785px
+
+  .subtitle
+    margin: 20px auto 40px
+    font-size: 26px
+    font-weight: 600
+    max-width: 320px
+
+  .btn
+    margin: 0 auto
+
+.ecology-start-wrapper
+  background: #2F4050 url('../img/ecology-bg.svg') no-repeat center
+  -webkit-background-size: 1019px
+  background-size: 1019px
+
+.why-platforms
+  margin: 150px 0 125px
+
+  h2
+    font-size: 32px
+
+.why-platforms-card
+  margin: 0 0 25px
+
+  &__icon
+    margin: 0 0 26px
+
+  h3
+    margin: 0 0 20px
+    padding: 0 0 20px
+    font-size: 16px
+    font-weight: 600
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 30px
+      height: 2px
+      background: #CF5555
+
+  .box-text
+    font-size: 14px
+    color: #666666
+    line-height: 150%
+    font-weight: normal
+
+.product-platform
+  margin: 150px 0 120px
+
+.product-platform-card
+  width: 100%
+  height: 100%
+  background: #2F4050
+  color: #fff
+  padding: 20px 30px
+  display: flex
+  flex-direction: column
+
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+
+  &__body
+    margin: 20px 0 auto
+
+  h3
+    font-size: 18px
+    font-weight: 600
+    margin: 0 0 0 10px
+
+  .links-next
+    color: #fff
+    margin: 17px 0 0
+
+    &__icon
+      fill: #fff
+
+  .box-text
+    font-weight: normal
+    line-height: 130%
+    max-width: 290px
+
+.solutions-platforms
+  margin: 0 0 120px
+
+.solutions-platforms-box
+  width: 100%
+  height: 100%
+  background: #F2F6F7
+  padding: 30px 20px
+  display: flex
+  flex-direction: column
+
+  .links-next
+    margin: 26px 0 0
+
+  .box-text
+    margin: 0 0 auto
+    font-weight: normal
+    line-height: 150%
+
+  h3
+    font-size: 18px
+    font-weight: 600
+    margin: 0 0 15px
+    padding: 0 0 15px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      height: 2px
+      width: 30px
+      background: #CF5555
+
+.communities
+  padding: 120px 0
+
+  h2
+    font-size: 32px
+    margin: 0 0 40px
+
+.nav-tabs.nav-tabs-communities
+  width: 100%
+  text-transform: none
+
+  .nav-link
+    text-transform: none
+    padding: 30px 0
+    font-size: 20px
+    font-weight: 500
+    border:
+      right: none
+      left: none
+      color: #E0E0E0
+
+    &.active
+      background: transparent
+      color: #CF5555
+      font-weight: 600
+      border-color: #E0E0E0
+
+.tab-content.tab-content-communities
+  padding: 0
+  width: 100%
+
+.tab-content-communities
+  &__images
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    max-height: 440px
+    overflow: hidden
+  &__information
+    position: absolute
+    left: 0
+    bottom: 0
+    background: rgba(47, 64, 80, 0.85)
+    padding: 28px 28px 28px 20px
+    color: #fff
+    width: fit-content
+    backdrop-filter: blur(5px)
+    max-width: 450px
+    .box-text
+      margin: 0
+      line-height: 150%
+    .links-next
+      color: rgba(255, 255, 255, 0.75)
+      margin: 20px 0 0
+      &__icon
+        fill: #CF5555
+
+
+
+.supported-hardware
+  padding: 120px 0
+
+  h2
+    font-size: 32px
+  &__content
+    height: 100%
+    max-width: 530px
+    display: flex
+    flex-direction: column
+  .form-search
+    margin: auto 0 0
+    width: 100%
+
+    max-width: none
+    button
+      background: transparent
+      fill: #CF5555
 
 @import "media"
