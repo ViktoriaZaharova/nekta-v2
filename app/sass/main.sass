@@ -506,9 +506,7 @@ strong
     text-transform: uppercase
     opacity: .15
     color: rgba(255, 255, 255, 0.5)
-    font-size: 300px
     line-height: 100%
-    font-weight: 900
     width: 100%
     min-width: 1467px
     position: absolute
@@ -518,6 +516,7 @@ strong
     transform: translate(-50%, 0)
 
     p
+      width: 100%
       font-size: 300px
       font-weight: 900
       margin: 0 0 9px
@@ -721,6 +720,7 @@ strong
   h3
     margin: 0 auto 20px
     font-size: 42px
+    line-height: 1
     font-weight: bold
     color: #CF5555
 
@@ -4901,6 +4901,7 @@ strong
     display: flex
     align-items: center
     justify-content: center
+    flex-wrap: wrap
     max-height: 440px
     overflow: hidden
   &__information
@@ -4926,12 +4927,12 @@ strong
 
 .supported-hardware
   padding: 120px 0
-
+  margin: 0 0 150px
   h2
     font-size: 32px
   &__content
     height: 100%
-    max-width: 530px
+    max-width: 540px
     display: flex
     flex-direction: column
   .form-search
@@ -4942,5 +4943,32 @@ strong
     button
       background: transparent
       fill: #CF5555
+  .box-text
+    color: #666666
+    font-weight: normal
+    line-height: 150%
+
+.supported-hardware-numbers
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 20px
+  &-box
+    display: flex
+    align-items: center
+    margin: 0 -1px 20px 0
+    font-size: 24px
+    font-weight: bold
+    color: #2F4050
+    padding: 16px 20px
+    border: 1px solid #E0E0E0
+    width: 265px
+    span
+      color: #212121
+      font-weight: 500
+      font-size: 16px
+      margin: 0 0 0 10px
+
 
 @import "media"

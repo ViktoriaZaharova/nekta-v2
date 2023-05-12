@@ -467,9 +467,7 @@ strong {
     text-transform: uppercase;
     opacity: .15;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 300px;
     line-height: 100%;
-    font-weight: 900;
     width: 100%;
     min-width: 1467px;
     position: absolute;
@@ -479,6 +477,7 @@ strong {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
     .home-v2 .text-overlay p {
+      width: 100%;
       font-size: 300px;
       font-weight: 900;
       margin: 0 0 9px; }
@@ -661,6 +660,7 @@ strong {
   .advantages-box h3 {
     margin: 0 auto 20px;
     font-size: 42px;
+    line-height: 1;
     font-weight: bold;
     color: #CF5555; }
     .advantages-box h3 span {
@@ -5071,6 +5071,8 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-height: 440px;
   overflow: hidden; }
 
@@ -5097,12 +5099,13 @@ strong {
       fill: #CF5555; }
 
 .supported-hardware {
-  padding: 120px 0; }
+  padding: 120px 0;
+  margin: 0 0 150px; }
   .supported-hardware h2 {
     font-size: 32px; }
   .supported-hardware__content {
     height: 100%;
-    max-width: 530px;
+    max-width: 540px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5117,6 +5120,41 @@ strong {
     .supported-hardware .form-search button {
       background: transparent;
       fill: #CF5555; }
+  .supported-hardware .box-text {
+    color: #666666;
+    font-weight: normal;
+    line-height: 150%; }
+
+.supported-hardware-numbers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 20px; }
+  .supported-hardware-numbers-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 -1px 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2F4050;
+    padding: 16px 20px;
+    border: 1px solid #E0E0E0;
+    width: 265px; }
+    .supported-hardware-numbers-box span {
+      color: #212121;
+      font-weight: 500;
+      font-size: 16px;
+      margin: 0 0 0 10px; }
 
 @media only screen and (max-width: 1810px) {
   .phone {
@@ -5156,7 +5194,12 @@ strong {
   .home-img {
     min-width: 700px; }
   .home_1 {
-    background-size: cover; } }
+    background-size: cover; }
+  .home-v2 .text-overlay {
+    min-width: auto; }
+    .home-v2 .text-overlay p {
+      font-size: 200px;
+      line-height: 1; } }
 
 @media only screen and (max-width: 1240px) {
   header .container-fluid {
@@ -5278,7 +5321,17 @@ strong {
     font-size: 200px;
     line-height: 1; }
   .atmosphere .subtitle {
-    font-size: 100px; } }
+    font-size: 100px; }
+  .home-v2:before {
+    width: 100%; }
+  .product-platform {
+    margin: 70px 0 50px; }
+  .solutions-platforms {
+    margin: 0 0 50px; }
+  .communities {
+    padding: 60px 0; }
+  .why-platforms {
+    margin: 70px 0 50px; } }
 
 @media only screen and (max-width: 992px) {
   .home-img {
@@ -5638,7 +5691,45 @@ strong {
       font-size: 36px;
       line-height: normal; }
   .history-company {
-    margin: 60px 0; } }
+    margin: 60px 0; }
+  .home-v2 {
+    background: url("../img/home-bg2.jpg") no-repeat center;
+      background-size: cover; }
+    .home-v2:before {
+      display: block; }
+    .home-v2 .text-overlay {
+      top: -20px;
+      left: 50%; }
+      .home-v2 .text-overlay p {
+        font-size: 150px; }
+  .nav-tabs.nav-tabs-communities {
+    margin: 0 0 30px; }
+  .tab-content-communities__images {
+    max-height: none; }
+  .supported-hardware {
+    padding: 60px 0;
+    margin: 0 0 70px; }
+    .supported-hardware h2 {
+      font-size: 28px; }
+    .supported-hardware__content {
+      max-width: none; }
+    .supported-hardware .box-text {
+      margin: 0 0 30px; }
+    .supported-hardware__img {
+      margin: 30px 0 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .iot-platform-wrapper {
+    padding: 40px 10px; }
+    .iot-platform-wrapper h3 {
+      font-size: 26px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -5890,7 +5981,25 @@ strong {
     bottom: 0;
     top: auto;
     right: auto;
-    left: 0; } }
+    left: 0; }
+  .home-v2 h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto 30px; }
+  .home-v2 .box-text {
+    text-align: center;
+    margin: 0 auto; }
+  .home-v2 .home-content .btn-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 40px auto 0; }
+  .tab-content.tab-content-communities {
+    padding: 0; }
+  .iot-platform-wrapper h2 {
+    font-size: 30px; }
+  .iot-platform-wrapper .subtitle {
+    font-size: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -5998,7 +6107,30 @@ strong {
     font-size: 120px;
     margin: 0; }
   .history-company-section__head h3 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .home-v2 .text-overlay {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center; }
+    .home-v2 .text-overlay p {
+      font-size: 100px; }
+      .home-v2 .text-overlay p:last-child {
+        text-align: center; }
+  .home-v2 h1 {
+    font-size: 26px; }
+  .tab-content-communities__information {
+    padding: 20px; }
+    .tab-content-communities__information .box-text {
+      font-size: 14px;
+      margin: 0 0 20px; }
+  .communities h2 {
+    font-size: 24px;
+    margin: 0 0 30px; }
+  .tab-content-communities__information {
+    position: relative;
+    width: 100%;
+    max-width: none; } }
 
 @media only screen and (max-width: 480px) {
   header .list-language, header .links-cabinet {
@@ -6085,4 +6217,8 @@ strong {
   .history-company-section .year {
     font-size: 100px; }
   .history-company-section__head h3 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .home-v2 h1 {
+    font-size: 24px; }
+  .home-v2 .text-overlay p {
+    font-size: 70px; } }

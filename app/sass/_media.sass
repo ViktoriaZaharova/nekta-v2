@@ -50,6 +50,12 @@
   .home_1
     background-size: cover
 
+  .home-v2 .text-overlay
+    min-width: auto
+    p
+      font-size: 200px
+      line-height: 1
+
 
 @media only screen and (max-width: 1240px)
   header .container-fluid
@@ -215,6 +221,20 @@
   .atmosphere .subtitle
     font-size: 100px
 
+  .home-v2:before
+    width: 100%
+
+  .product-platform
+    margin: 70px 0 50px
+
+  .solutions-platforms
+    margin: 0 0 50px
+
+  .communities
+    padding: 60px 0
+
+  .why-platforms
+    margin: 70px 0 50px
 
 @media only screen and (max-width: 992px)
   .home-img
@@ -697,7 +717,43 @@
   .history-company
     margin: 60px 0
 
+  .home-v2
+    background: url("../img/home-bg2.jpg") no-repeat center
+      size: cover
+    &:before
+      display: block
 
+    .text-overlay
+      top: -20px
+      left: 50%
+      p
+        font-size: 150px
+
+  .nav-tabs.nav-tabs-communities
+    margin: 0 0 30px
+
+  .tab-content-communities__images
+    max-height: none
+
+  .supported-hardware
+    padding: 60px 0
+    margin: 0 0 70px
+    h2
+      font-size: 28px
+    &__content
+      max-width: none
+    .box-text
+      margin: 0 0 30px
+    &__img
+      margin: 30px 0 0
+      display: flex
+      align-items: center
+      justify-content: center
+
+  .iot-platform-wrapper
+    padding: 40px 10px
+    h3
+      font-size: 26px
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 768px)
@@ -1000,6 +1056,28 @@
     right: auto
     left: 0
 
+  .home-v2
+    h1
+      font-size: 36px
+      text-align: center
+      margin: 0 auto 30px
+    .box-text
+      text-align: center
+      margin: 0 auto
+    .home-content
+      .btn-group
+        justify-content: center
+        margin: 40px auto 0
+
+  .tab-content.tab-content-communities
+    padding: 0
+
+  .iot-platform-wrapper
+    h2
+      font-size: 30px
+    .subtitle
+      font-size: 20px
+
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
   .advantages-box
@@ -1142,6 +1220,34 @@
   .history-company-section__head h3
     font-size: 30px
 
+  .home-v2
+    .text-overlay
+      top: 50%
+      transform: translate(-50%,-50%)
+      text-align: center
+      p
+        font-size: 100px
+        &:last-child
+          text-align: center
+    h1
+      font-size: 26px
+
+  .tab-content-communities__information
+    padding: 20px
+    .box-text
+      font-size: 14px
+      margin: 0 0 20px
+
+  .communities h2
+    font-size: 24px
+    margin: 0 0 30px
+
+  .tab-content-communities__information
+    position: relative
+    width: 100%
+    max-width: none
+
+
 @media only screen and (max-width: 480px)
   header
     .list-language, .links-cabinet
@@ -1264,3 +1370,10 @@
 
   .history-company-section__head h3
     font-size: 24px
+
+  .home-v2
+    h1
+      font-size: 24px
+    .text-overlay
+      p
+        font-size: 70px
