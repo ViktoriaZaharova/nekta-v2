@@ -467,7 +467,6 @@ strong {
     text-transform: uppercase;
     opacity: .15;
     color: rgba(255, 255, 255, 0.5);
-    line-height: 100%;
     width: 100%;
     min-width: 1467px;
     position: absolute;
@@ -475,10 +474,18 @@ strong {
     top: -96px;
     left: 43%;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
+            transform: translate(-50%, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .home-v2 .text-overlay p {
       width: 100%;
       font-size: 300px;
+      line-height: 100%;
       font-weight: 900;
       margin: 0 0 9px; }
       .home-v2 .text-overlay p:last-child {
